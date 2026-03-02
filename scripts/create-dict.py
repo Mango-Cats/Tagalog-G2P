@@ -14,25 +14,12 @@ creates a pronunciation dictionary using vocabulary from LOG files and correspon
 
 from g2p_parsing import *
 
-
-def rem_with_char(
-    word: str, char_set: set[str] = {"c", "f", "j", "Ã±", "q", "v", "x", "z"}
-) -> bool:
-    """Return True if word does NOT contain any forbidden character"""
-    return char_set.isdisjoint(set(word.lower()))
-
-
-def rem_min_len(word: str, min_len: int = 2) -> bool:
-    """Return True if word length >= min_len"""
-    return len(word) >= min_len
-
-
 if __name__ == "__main__":
     # import operator
 
-    log_list = "log-testref-files.txt"
-    csv_list = "csv-testref-files.txt"
-    dict_name = "testref_clean.dict"
+    log_list = "log-train-files.txt"
+    csv_list = "csv-train-files.txt"
+    dict_name = "train.dict"
 
     utt_lookup = dict()
     trxn_lookup = dict()
@@ -64,9 +51,7 @@ if __name__ == "__main__":
                 print(len(trxn), trxn_lookup[key])
             else:
                 for i in range(len(utt)):
-                    w, p = utt[i], trxn[i]
-                    if rem_min_len(w) and rem_with_char(w):
-                        utt_trxn_set.add((w, p))
+                    utt_trxn_set.add((utt[i], trxn[i]))
 
         utt_trxn_list = list(utt_trxn_set)
         utt_trxn_list.sort()
