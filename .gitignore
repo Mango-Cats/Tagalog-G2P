@@ -1,1 +1,24 @@
 .DS_Store
+
+# Generated model files
+scripts/train/
+
+# Generated file lists
+scripts/csv-train-files.txt
+scripts/log-train-files.txt
+scripts/csv-train-tgl-files.txt
+scripts/log-train-tgl-files.txt
+scripts/csv-test-files.txt
+scripts/log-test-files.txt
+scripts/csv-testref-files.txt
+
+# Generated dictionaries and G2P output
+scripts/train.dict
+scripts/train_tgl.dict
+scripts/wlist-g2p.txt
+scripts/test.wlist
+
+# Python cache
+__pycache__/
+*.pyc
+
