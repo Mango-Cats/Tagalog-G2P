@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SEARCH_PATH="../data/_small/test"
+SEARCH_PATH="../data/_large/test"
 
 counter(){
     for file in "$1"/*
