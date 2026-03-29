@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 """
 ECE 198: Special Problems in Electronics and Communications Engineering
@@ -7,20 +7,9 @@ DSP01 - A hybrid grapheme-to-phoneme and speech recognition system for automated
 2014-06489 Tsang, Joshua Lijandro L.
 """
 
-"""
-< create-dict-tgl.py >
-creates a pronunciation dictionary using vocabulary from LOG files and corresponding transcriptions thereof from CSV files
-TGL-only variant: reads from log-train-tgl-files.txt and csv-train-tgl-files.txt, writes to train_tgl.dict
-"""
-
 from g2p_parsing import *
 
-if __name__ == "__main__":
-    # import operator
-
-    log_list = "log-train-tgl-files.txt"
-    csv_list = "csv-train-tgl-files.txt"
-    dict_name = "train_tgl.dict"
+def create_dict(log_list, csv_list, dict_name):
 
     utt_lookup = dict()
     trxn_lookup = dict()
@@ -42,10 +31,6 @@ if __name__ == "__main__":
             # print(trxn_lookup)
             pass
 
-        # Normalize keys from clean files: CSV session IDs have '_clean' suffix
-        # but log wav filenames don't, so strip it before matching.
-        trxn_lookup = {k.replace('_clean', ''): v for k, v in trxn_lookup.items()}
-
         for key in trxn_lookup.keys():
             utt = utt_lookup[key]
             trxn = trxn_lookup[key]
@@ -63,3 +48,44 @@ if __name__ == "__main__":
 
         for utt, trxn in utt_trxn_list:
             dict_file.write(utt + "\t" + trxn + "\n")
+
+def create_trxn(log_test, wlist_g2p_name):
+
+    utt_lookup = dict()
+    trxn_lookup = dict()
+    wlist_g2p = dict()
+
+    csv_files = list()
+
+    with open(log_test, "r") as log_test_file, open(
+        wlist_g2p_name, "r"
+    ) as wlist_g2p_file:
+
+        for line in log_test_file:
+            utt_lookup.update(clean_utt(log2utt(line.strip())))
+
+            csv_files.append(".".join(line.split(".")[:-1]) + ".csv")
+
+        for line in wlist_g2p_file:
+            pair = line.strip().split("\t")
+            wlist_g2p[pair[0]] = pair[1]
+
+        trxn_lookup.update(utt2trxn(utt_lookup, wlist_g2p))
+
+        for csv_address in csv_files:
+            trxn2csv(trxn_lookup, csv_address)
+
+def create_wlist(log_test, wlist_name):
+
+    utt_lookup = dict()
+    wlist = dict()
+
+    with open(log_test, "r") as log_test_file, open(wlist_name, "w") as wlist_file:
+
+        for line in log_test_file:
+            utt_lookup.update(clean_utt(log2utt(line.strip())))
+
+        wlist.update(utt2wlist(utt_lookup))
+
+        for word in wlist.keys():
+            wlist_file.write(word + "\n")
