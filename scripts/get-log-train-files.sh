@@ -17,4 +17,4 @@ counter(){
     done
 }
 
-counter "$SEARCH_PATH" > log-train-files.txt
+counter "$SEARCH_PATH" > paths/log-train-files.txt
