@@ -10,7 +10,10 @@ DSP01 - A hybrid grapheme-to-phoneme and speech recognition system for automated
 from g2p_parsing import *
 
 def create_dict(log_list, csv_list, dict_name):
-
+    '''
+    < create-dict.py >
+    creates a pronunciation dictionary using vocabulary from LOG files and corresponding transcriptions thereof from CSV files
+    '''
     utt_lookup = dict()
     trxn_lookup = dict()
     utt_trxn_set = set()
@@ -49,8 +52,12 @@ def create_dict(log_list, csv_list, dict_name):
         for utt, trxn in utt_trxn_list:
             dict_file.write(utt + "\t" + trxn + "\n")
 
-def create_trxn(log_test, wlist_g2p_name):
 
+def create_trxn(log_test, wlist_g2p_name):
+    '''
+    create_trxn
+    encodes CSV file transcriptions of utterances in LOG files using a dictionary containing words and G2P-generated pronunciations
+    '''
     utt_lookup = dict()
     trxn_lookup = dict()
     wlist_g2p = dict()
@@ -75,8 +82,12 @@ def create_trxn(log_test, wlist_g2p_name):
         for csv_address in csv_files:
             trxn2csv(trxn_lookup, csv_address)
 
-def create_wlist(log_test, wlist_name):
 
+def create_wlist(log_test, wlist_name):
+    '''
+    create_wlist
+    creates a wordlist file using vocabulary from LOG files
+    '''
     utt_lookup = dict()
     wlist = dict()
 
