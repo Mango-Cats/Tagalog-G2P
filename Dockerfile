@@ -97,7 +97,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN pip3 install --no-cache-dir \
         pandas \
         unidecode \
-        jupyterlab
+        notebook \
+        ipykernel
+
+RUN python3 -m ipykernel install \
+        --user \
+        --name phonetisaurus \
+        --display-name "Python (Phonetisaurus)"
 
 WORKDIR /setup
 
