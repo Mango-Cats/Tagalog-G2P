@@ -17,4 +17,4 @@ counter(){
     done
 }
 
-counter "$SEARCH_PATH" > paths/csv-test-files.txt
+counter "$SEARCH_PATH" > ../notebook/paths/csv-test-files.txt
