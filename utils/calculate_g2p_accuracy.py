@@ -15,10 +15,7 @@ compares the edit distance of G2P-generated CSV files against manually-verified 
 from g2p_parsing import *
 from alignment import *
 
-if __name__ == "__main__":
-
-    test_list = "csv-test-files.txt"
-    ref_list = "csv-testref-files.txt"
+def calculate_accuracy(csv_test_list, csv_ref_list):
 
     test_lookup = dict()
     ref_lookup = dict()
@@ -26,7 +23,7 @@ if __name__ == "__main__":
     total_ref_phones = 0
     total_edit_distance = 0
 
-    with open(test_list, "r") as test_list_file, open(ref_list, "r") as ref_list_file:
+    with open(csv_test_list, "r") as test_list_file, open(csv_ref_list, "r") as ref_list_file:
 
         for line in test_list_file:
             clean_csv(line.strip())
