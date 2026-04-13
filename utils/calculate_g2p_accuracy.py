@@ -34,13 +34,21 @@ def calculate_accuracy(csv_test_list, csv_ref_list):
             ref_lookup.update(trxn2phon(csv2trxn(line.strip())))
 
         for key in ref_lookup.keys():
+            
             test_trxn = test_lookup[key]
             ref_trxn = ref_lookup[key]
-
+            
             total_ref_phones += len(ref_trxn)
 
             align_out = align_trxn(test_trxn, ref_trxn)
             total_edit_distance += align_out[2]
+
+            if align_out[2] > 0:
+                with open("./errors/alignment_errors.txt", "a") as error_file:
+                    error_file.write(key + "\n")
+                    error_file.write("test: " + " ".join(align_out[0]) + "\n")
+                    error_file.write("ref:  " + " ".join(align_out[1]) + "\n")
+                    error_file.write("edit distance: " + str(align_out[2]) + "\n\n")
 
     print("total phones in reference:", total_ref_phones)
     print("total edit distance:      ", total_edit_distance)
