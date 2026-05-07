@@ -53,3 +53,31 @@ def calculate_accuracy(csv_test_list, csv_ref_list):
     print("total phones in reference:", total_ref_phones)
     print("total edit distance:      ", total_edit_distance)
     print("phone error rate:         ", total_edit_distance / total_ref_phones)
+
+
+def compute_per_cv(held_out_lines, apply_stdout):
+    """
+    Compute PER for a CV fold.
+    held_out_lines : list of 'word p1 p2 ...' strings (gold standard)
+    apply_stdout   : stdout from phonetisaurus-apply (word\tphonemes per line)
+    """
+    pred = {}
+    for line in apply_stdout.strip().split("\n"):
+        if not line.strip():
+            continue
+        parts = line.split("\t")
+        if len(parts) >= 2:
+            pred[parts[0]] = parts[1].split()
+
+    total_ref = 0
+    total_edit = 0
+    for line in held_out_lines:
+        parts = line.split()
+        if len(parts) < 2:
+            continue
+        word, gold = parts[0], parts[1:]
+        hypothesis = pred.get(word, [])
+        total_ref += len(gold)
+        total_edit += align_trxn(gold, hypothesis)[2]
+
+    return total_edit / total_ref if total_ref > 0 else 1.0
