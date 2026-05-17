@@ -24,121 +24,6 @@ baba	b a b a
 gulugod	g u l u g u d
 kalingkingan	k a l i ng k i ng a n
 kamay	k a m ay
-christian	k r i s ch a n
-matthew	m a t th iw
-ricardo	r i k a er d o
-victor	v i s t o r
-omar	o m a r
-anthony	q a n th o n i
-mark	m a er k
-luke	l u k e
-erwin	e er w i n
-dominic	d o m i n i k
-richard	r i ch a er d
-rafael	r a f a e l
-peter	p i t e r
-mary	m e r i
-jane	jh ey n
-rachelle	r a sh e l
-pamela	p a m e l a
-kate	k a t e
-grace	g r ey s
-sheila	sh i l a
-sarah	s a er a
-isabel	q i s a b e l
-jillian	jh i l ly a n
-stella	s t e l a
-camille	k a m i l e
-marissa	m a r i s a
-sharon	sh a r o n
-evelyn	q e v ly n
-de	d e
-asis	q a s i s
-bautista	b aw t i s t a
-montalbo	m o n t a l b o
-delos	d e l o s
-reyes	r e y e s
-sagun	s a g u n
-singapore	s i ng a p o r e
-lazaro	l a s a r o
-santiago	s a n t i q a g o
-philippine	f i l i p i n
-dealing	d e a l i ng
-exchange	e k s ch ey n jh
-globe	g l ow b
-telecom	t e l e k o m
-first	f i r s t
-holdings	h ow l d i ng s
-eton	e t o n
-properties	p r o p er t i s
-philippines	f i l i p i n s
-gma	g m a
-network	n e t w er k
-sun	s u n
-life	l i f e
-financial	f i n a n sh a l
-digital	d i g i t a l
-telecommunications	t e l e k o m m u n i k a sh o n s
-bankard	b a ng k a er d
-centro	s e n t r o
-escolar	q e s k o l a r
-university	y u n i v er s i t i
-philex	f i l e k s
-mining	m i n i ng
-metropolitan	m e t er o p o l i t a n
-bank	b a ng k
-and	q e n
-trust	t er a s t
-company	k uh m p a n i
-abscbn	q a b s k b n
-corporation	k o r p o r ey sh uh n
-millennium	m i l e n i u m
-plaza	p l ey z a
-serviced	s e er v i s e d
-residences	r e s i d e n s e s
-crown	k er aw n
-regency	er i jh e n s i
-prince	p r i n s e
-resort	r i s o er t
-linden	l i n d e n
-suites	s w i t s
-hotel	h o t e l
-las	l a s
-palmas	p a l m a s
-maribago	m a r i b a g o q
-bluewater	b l u w o t e er
-beach	b i ch
-ascott	q a s k o t t
-makati	m a k a t i
-residence	r e s i d e n s
-shangri-las	sh a ng er i l a s
-mactan	m a k t a n
-spa	s p a
-peninsula	p e n i n s u l a
-manila	m a n i l a
-palm	p a l m
-le	l e
-soleil	s o l i l
-boracay	b u r a k ay
-isla	q i s l a
-ng	ng
-corregidor	k o r er i jh i d o r
-ayala	q a y a l a
-center	s e n t e r
-hinulugang	h i n u l u g a ng
-taktak	t a k t a k
-ambuklao	q a m b u k l aw
-dam	d a m
-simbahan	s i m b a h a n
-santo	s a n t o
-tomas	t o m a s
-mines	m ay n s
-view	v y u
-park	p a er k
-san	s a n
-sebastian	s e b a s ch a n
-dilao	d i l aw
-chinatown	ch ay n a t aw n
 sarciado	s a er sh a d o
 hilaw	h i l aw
 guisado	g i s a d o
@@ -154,21 +39,8 @@ palabok	p a l a b o k
 hamonado	h a m o n a d o
 molo	m o l o
 soriso	s o r i s o
-pagadian	p a g a d i q a n
-airport	q e er p o er t
-dumaguete	d u m a g u e t e
-ngay-on	ng a y q o n
-tuguegarao	t u g e g a r a o q
-zamboanga	s a m b w a ng g a
-international	q i n t er n a sh uh n a l
-laoag	l a q u a g
-isra	q i s r a
-gab-i	g a b q i
-ringring	r i ng r i ng
 labinlimang	l a b i n l i m a ng
 minuto	m i n u t o
-agosto	q a g o s t o
-biyernes	b i y e er n s
 araw-araw	q a r aw q a r aw
 maya-maya	m a y a m a y a
 kamakalawa	k a m a k a l a w a
@@ -192,18 +64,9 @@ tag-araw	t a g q a r aw
 amihan	q a m i h a n
 halumigmig	h a l u m i g m i
 bugso	b u g s o
+ng	ng
 hangin	h a ng i n
 ulan	u l a n
-quezon	k e z o n
-city	s i t i
-catbalogan	k a t b a l o g a n
-muntinlupa	m u n t i n l u p a
-mandaluyong	m a n d a l u y o ng
-ozamiz	q o s a m i z
-batangas	b a t a ng g a s
-roxas	r o h a s
-bacolod	b a k o l o d
-yellow	y e l ow
 dito	d i t o
 kami	k a m i
 riyan	r i y a n
@@ -290,15 +153,9 @@ hindi	h i n d i q
 siya	sh a
 kumain	k u m a q i n
 no	n o
-si	s i
-michael	m ay k e l
-ba	b a
-mangga	m a ng g a
-tutugtog	t u t u g t o g
-francisco	f r a n s i s k o
-di	d i
 saan	s a q a n
 nag-aaral	n a g q a a r a l
+si	s i
 maricel	m a r i s e l
 aling	a l i ng
 damit	d a m i t
@@ -308,17 +165,15 @@ paano	p a q a n o
 nawala	n a w a l a q
 gamit	g a m i t
 ni	n i
+michael	m ay k e l
 guro	g u r o
+ba	b a
 alin-alin	a l i n q a l i n
 bibili	b i b i l i q
-malayo	m a l a y o q
-bahay	b a h ay
-ronald	r o n a l d
 mabait	m a b a i t
-pilipino	p i l i p i n o
-james	jh ey m s
+tutugtog	t u t u g t o g
+francisco	f r a n s i s k o
 o	o q
-amerikano	q a m e r i k a n o
 kakanta	k a k a n t a
 ito	i t o
 ikalawang	i k a l a w a ng
@@ -333,18 +188,9 @@ langis	l a ng i s
 simula	s i m u l a
 noong	n o q o ng
 linggo	l i ng g o q
-inaprubahan	q i n a p r u b a h a n
-pgma	p g m a
-pag-iisa	p a g q i i s a
-higanteng	h i g a n t e ng
-bangko	b a ng k o
 magkatrabaho	m a g k a t er a b a h o q
 lumuluwas	l u m u l u w a s
 maynila	m a n i l a
-utang	u t a ng
-pilipinas	p i l i p i ny a s
-ay	ay
-bumaba	b u m a b a
 itoy	i t oy
 matapos	m a t a p o s
 pumalo	p u m a l o
@@ -380,53 +226,16 @@ itataas	i t a t a a s
 produksyon	p r o d u k sh o n
 asukal	a s u k a l
 taong	t a q o ng
-batay	b a t ay
-kasi	k a s i
-kasauluyang	k a s a u l u y a ng
-batas	b a t a s
-lamang	l a m a ng
-mula	m u l a
-guimaras	g i m a r a s
-tinatanggap	t i n a t a ng g a p
-amerika	q a m e r i k a
 diniskwento	d i n i s k w e n t o
+bangko	b a ng k o
 sentral	s e n t r a l
 kakapusan	k a k a p u s a n
 maganda	m a g a n d a
 plataporma	p l a t a p o er m a
 ekonomiya	q e k o n o m i y a
-nakatakda	n a k a t a k d a
-itong	i t o ng
-ipatupad	q i p a t u p a d
-darating	d a r a t i ng
-a-uno	q a q u n o
-hulyo	h u l y o q
-masyadong	m a sh a d o ng
-naapektuhan	n a q a p e k t u h a n
-lindol	l i n d o l
-pambansang	p a m b a n s a ng
-indonesia	q i n d u n sh a
-bumulusok	b u m u l u s o k
-del	d e l
-monte	m o n t e
-pacific	p a s i f i k
-katunayan	k a t u n a y a n
-sinabi	s i n a b i
-bsp	b s p
-kumpara	k u m p a r a
-nakaraang	n a k a r a a ng
-mahigit	m a h i g i t
-singil	s i ng i l
-pagpapadala	p a g p a p a d a l a
-gagamitin	g a g a m i t i n
-da	d a
-laban	l a b a n
-peste	p e s t e
-niyog	n i y o g
-tatlumpung	t a t l u m p u ng
-milyong	m i ly o ng
 daan	d a q a n
 dalawamput	d a l a w a m p u t
+milyong	m i ly o ng
 pisong	p i s o ng
 pondo	p o n d o
 gawad	g a w a d
@@ -440,12 +249,6 @@ pinaka-mataas	p i n a k a m a t a a s
 lebel	l e b e l
 nito	n i t o
 kasaysayan	k a s a y s a y a n
-samie	s a m i e
-lim	l i m
-nahalal	n a h a l a l
-bilang	b i l a ng
-pangulo	p a ng u l o
-pcci	p s i s i i
 bunga	b u ng a
 patuloy	p a t u l oy
 pagtaas	p a g t a a s
@@ -464,8 +267,10 @@ nasimulan	n a s i m u l a n
 upang	q u p a ng
 mabayaran	m a b a y a r a n
 lahat	l a h a t
+utang	u t a ng
 siyang	sh a ng
 nagpapahirap	n a g p a p a h i r a p
+pilipino	p i l i p i n o
 kabutihan	k a b u t i h a n
 sambayanang	s a m b a y a n a ng
 kailangang	k a q i l a ng a ng
@@ -474,20 +279,9 @@ ibat	q i b a t
 ibang	q i b a ng
 ahensya	q a h e n sh a
 gobyerno	g o b y e er n o
-ipagagalaw	q i p a g a g a l aw
 pag-unlad	p a g q u n l a d
 pakikinabangan	p a k i k i n a b a ng a n
 sektor	s e k t o r
-umabot	q u m a b o t
-five	f ay v
-point	p oy n t
-trilyong	t r i ly o ng
-naitalang	n a i t a l a ng
-tanggapan	t a ng g a p a n
-pamahalaan	p a m a h a l a q a n
-pagtatapos	p a g t a t a p o s
-setyembre	s e t y e m b r e
-nakalipas	n a k a l i p a s
 konstruksyon	k o n s t r u k sh o n
 tatlong	t a t l o ng
 trilyon	t r i ly o n
@@ -496,27 +290,10 @@ pamamayagpag	p a m a m a y a g p a g
 kontra	k o n t r a
 loob	l o q o b
 pitong	p i t o ng
-buong	b u q o ng
-suporta	s u p o er t a q
-dti	d t i
-pagpapaunlad	p a g p a p a q u n l a d
-natukoy	n a t u k oy
-otop	q aw t o p
-palawan	p a l a w a n
-partikular	p a er t i k u l a r
-produktong	p r o d u k t o ng
-kasuy	k a s u i
 sahod	s a h o d
 isusulong	i s u s u l o ng
 pampublikong	p a m p u b l i k o ng
 manggagawa	m a ng g a g a w a
-pananatili	p a n a n a t i l i q
-bangus	b a ng u s
-raisers	r a q i s er s
-ilalim	q i l a l i m
-nama	n a m a
-hinihiling	h i n i h i l i ng
-alisin	a l i s i n
 anim	a n i m
 kabila	k a b i l a
 nagmamatigas	n a g m a m a t i g a s
@@ -540,12 +317,11 @@ magkano	m a g k a n o
 matutukoy	m a t u t u k oy
 sakit	s a k i t
 yan	y a n
-dok	d o k
 ako	q a k o
 makakain	m a k a k a q i n
-gabi	g a b i
 makahinga	m a k a h i ng a
 ayos	q a y o s
+gabi	g a b i
 parang	p a er a ng
 tinutusok-tusok	t i n u t u s o k t u s o k
 nakakasama	n a k a k a s a m a
@@ -567,6 +343,7 @@ nawawala	n a w a w a l a q
 ari	q a r i
 ngunit	ng u n i t
 uri	q u r i
+ay	ay
 awa	q a w a
 tao	t a o q
 gawa	g a w a
@@ -597,6 +374,7 @@ damo	d a m o
 patay	p a t ay
 kabayo	k a b a y o q
 damdamin	d a m d a m i n
+buong	b u q o ng
 katawan	k a t a w a n
 hampas	h a m p a s
 kalabaw	k a l a b aw
@@ -624,6 +402,7 @@ talagang	t a l a g a ng
 pagsulat	p a g s u l a t
 nating	n a t i ng
 tagalog	t a g a l o g
+itong	i t o ng
 katagalugan	k a t a l g a l u g a n
 pinamamahalaan	p i n a m a m a h a l a q a n
 unang	q u n a ng
@@ -631,15 +410,6 @@ panahon	p a n a h o n
 ating	q a t i ng
 tunay	t u n ay
 kababayan	k a b a b a y a n
-tinatawag	t i n a t a w a g
-pacto	p a k t o
-sangre	s a ng r e
-haring	h a r i ng
-sikatuna	s i k a t u n a
-legaspi	l e g a s p i
-pinakakatawanan	p i n a k a k a t a w a n a n
-hari	h a r i
-espana	q e s p a n a
 kaya	k a y a
 idila	i d i l a
 bulag	b u l a g
@@ -685,11 +455,13 @@ ugat	q u g a t
 pang	p a ng
 wariy	w a r i
 kabubuwal	k a b u b u w a l
+lamang	l a m a ng
 pagkatapos	p a g k a t a p o s
 bagyo	b a g y o q
 nasaktang	n a s a k t a ng
 lubha	l u b h a q
 nasugatan	n a s u g a t a n
+bumaba	b u m a b a
 lusong	l u s o ng
 sagot	s a g o t
 pagong	p a g o ng
@@ -721,28 +493,6 @@ mang	m a ng
 bato	b a t o
 moog	m o o g
 iba	q i b a
-maingat	m a q i ng a t
-pagsusuri	p a g s u s u r i
-pagtutulad	p a g t u t u l a d
-magtuturo	m a g t u t u r o
-buod	b u o d
-kuwentoy	k u w e n t oy
-galing	g a l i ng
-timogy	t i m o g i
-sumatra	s u m a t r a
-haba	h a b a
-mindanaw	m i n d a n aw
-dili	d i l i q
-kayay	k ay ay
-kapuluang	k a p u l u q a ng
-dinala	d i n a l a
-lahing	l a h i ng
-lumipat	l u m i p a t
-gawing	g a w i ng
-hilaga	h i l a g a
-manirahan	m a n i r a h a n
-pulo	p u l o
-riu-kiu	r i u k i u
 nasa-kuwentong	n a s a k u w e n t o
 katalasan	k a t a l a s a n
 isip	q i s i p
@@ -787,14 +537,17 @@ nilang	n i l a ng
 isinasailalim	q i s i n a s a q i l a l i m
 eksorsismo	q e k s o er s i s m o
 pamamaraan	p a m a m a r a q a n
+simbahan	s i m b a h a n
 sugpuin	s u g p i n
 masamang	m a s a m a ng
 ispiritu	q i s p i r i t u
 sumapi	s u m a p i
 pumuwesto	p u m u w e s t o
 una	q u n a
+bilang	b i l a ng
 pagpapakilalang	p a g p a p a k i l a l a ng
 pinuno	p i n u n o
+mahigit	m a h i g i t
 lang	l a ng
 nagagawa	n a g a g a w a
 niyang	ny a ng
@@ -806,14 +559,7 @@ paglalaro	p a g l a l a r o
 naglalakad	n a g l a l a k a d
 iput-iput	q i p u t q i p u t
 patungo	p a t u ng o
-nasasakop	n a s a s a k o p
-mayruong	m a y r o q o ng
-mag-asawang	m a g q a s a w a ng
-naninirahan	n a n i n i r a h a n
-paanan	p a q a n a n
-bundok	b u n d o k
-mateo	m a t e y o
-rizal	r i z a l
+bahay	b a h ay
 bukod	b u k o d
 duon	d o q o n
 biniyayaan	b i ny a y a q a n
@@ -888,8 +634,10 @@ panalangin	p a n a l a ng i n
 magkaruon	m a g k a r o q o n
 sariling	s a er i l i ng
 anak	q a n a k
+dinala	d i n a l a
 hagibis	h a g i b i s
 kalalakihan	k a l a l a k i h a n
+paanan	p a q a n a n
 yungib	y o ng i b
 tinangka	t i n a ng k a
 nila	n i l a
@@ -911,6 +659,7 @@ dapat	d a p a t
 maghari	m a g h a r i
 nag-usbong	n a g q u s b o ng
 diwat	d i w a t
+lahing	l a h i ng
 makabayan	m a k a b a y a n
 sasariwain	s a s a r i w a q i n
 pagbabalikan	p a g b a b a l i k a n
@@ -933,5 +682,80 @@ telebisyon	t e l e b i sh o n
 nata	n a t a
 ibong	q i b o ng
 himpapawid	h i m p a p a w i d
+mangga	m a ng g a
+di	d i
+malayo	m a l a y o q
+amerikano	q a m e r i k a n o
+nasasakop	n a s a s a k o p
+mayruong	m a y r o q o ng
+mag-asawang	m a g q a s a w a ng
+naninirahan	n a n i n i r a h a n
+bundok	b u n d o k
+maingat	m a q i ng a t
+pagsusuri	p a g s u s u r i
+pagtutulad	p a g t u t u l a d
+magtuturo	m a g t u t u r o
+buod	b u o d
+kuwentoy	k u w e n t oy
+galing	g a l i ng
+dili	d i l i q
+kayay	k ay ay
+lumipat	l u m i p a t
+gawing	g a w i ng
+manirahan	m a n i r a h a n
+pulo	p u l o
+batay	b a t ay
+kasi	k a s i
+kasauluyang	k a s a u l u y a ng
+batas	b a t a s
+mula	m u l a
+isla	q i s l a
+tinatanggap	t i n a t a ng g a p
+nakatakda	n a k a t a k d a
+ipatupad	q i p a t u p a d
+darating	d a r a t i ng
+masyadong	m a sh a d o ng
+naapektuhan	n a q a p e k t u h a n
+lindol	l i n d o l
+pambansang	p a m b a n s a ng
+bumulusok	b u m u l u s o k
+katunayan	k a t u n a y a n
+sinabi	s i n a b i
+kumpara	k u m p a r a
+nakaraang	n a k a r a a ng
+singil	s i ng i l
+pagpapadala	p a g p a p a d a l a
+inaprubahan	q i n a p r u b a h a n
+pag-iisa	p a g q i i s a
+higanteng	h i g a n t e ng
+ipagagalaw	q i p a g a g a l aw
+laban	l a b a n
+gagamitin	g a g a m i t i n
+peste	p e s t e
+niyog	n i y o g
+tatlumpung	t a t l u m p u ng
+nahalal	n a h a l a l
+pangulo	p a ng u l o
+umabot	q u m a b o t
+trilyong	t r i ly o ng
+naitalang	n a i t a l a ng
+tanggapan	t a ng g a p a n
+pamahalaan	p a m a h a l a q a n
+pagtatapos	p a g t a t a p o s
+nakalipas	n a k a l i p a s
+suporta	s u p o er t a q
+pagpapaunlad	p a g p a p a q u n l a d
+natukoy	n a t u k oy
+partikular	p a er t i k u l a r
+produktong	p r o d u k t o ng
+kasuy	k a s u i
+pananatili	p a n a n a t i l i q
+bangus	b a ng u s
+ilalim	q i l a l i m
+hinihiling	h i n i h i l i ng
+alisin	a l i s i n
+tinatawag	t i n a t a w a g
+haring	h a r i ng
+pinakakatawanan	p i n a k a k a t a w a n a n
+hari	h a r i
 tinulungan	t i n u l u ng a n
-pedro	p e d r o
