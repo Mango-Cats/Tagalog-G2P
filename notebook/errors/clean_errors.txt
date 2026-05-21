@@ -708,11 +708,6 @@ test: q u m a b o t
 ref:  q u m a b u t
 edit distance: 1
 
-0156.110816.035620.0528
-test: n a i t a l a ng
-ref:  n a i t a l a *
-edit distance: 1
-
 0156.110816.035620.0534
 test: s u p o er t a q
 ref:  s u p o er t a *
