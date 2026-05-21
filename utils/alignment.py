@@ -53,11 +53,13 @@ def align_trxn(seqA, seqB):
     i, j = lenA, lenB
     alnseqA, alnseqB = list(), list()
     edit_distance = 0
+    ops = []
 
     while (i > 0 and j > 0):
         if traceback_matrix[i][j] == 0:
             alnseqA.append(seqA[i-1])
             alnseqB.append(seqB[j-1])
+            ops.append((seqA[i-1], seqB[j-1]))
             if seqA[i-1] != seqB[j-1]:
                 edit_distance += 1
             i -= 1
@@ -65,29 +67,41 @@ def align_trxn(seqA, seqB):
         elif traceback_matrix[i][j] == 1:
             alnseqA.append(seqA[i-1])
             alnseqB.append('*')
+            ops.append((seqA[i-1], "*"))
             edit_distance += 1
             i -= 1
         elif traceback_matrix[i][j] == -1:
             alnseqA.append('*')
             alnseqB.append(seqB[j-1])
+
+            ops.append(("*", seqB[j-1]))
+
             edit_distance += 1
             j -= 1
     while i > 0:
         alnseqA.append(seqA[i-1])
         alnseqB.append('*')
+
+        ops.append((seqA[i-1], "*"))
+
         edit_distance += 1
         i -= 1
     while j > 0:
         alnseqA.append('*')
         alnseqB.append(seqB[j-1])
+
+        ops.append(("*", seqB[j-1]))
+        
+
         edit_distance += 1
         j -= 1
 
     # reverse sequences to original orders
     alnseqA = alnseqA[::-1]
     alnseqB = alnseqB[::-1]
+    ops = ops[::-1]
 
     # print(alnseqA)
     # print(alnseqB)
     # print('edit distance: ', edit_distance)
-    return [alnseqA, alnseqB, edit_distance]
+    return [alnseqA, alnseqB, edit_distance, ops]

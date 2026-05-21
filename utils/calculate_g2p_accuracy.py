@@ -23,7 +23,14 @@ def calculate_accuracy(csv_test_list, csv_ref_list, file_name):
     total_ref_phones = 0
     total_edit_distance = 0
 
+    ops_dict = {}
+
+    error_dict = {}
+
     with open(csv_test_list, "r") as test_list_file, open(csv_ref_list, "r") as ref_list_file:
+
+        with open("./errors/" + file_name + "_errors.txt", "w") as f:
+            pass
 
         for line in test_list_file:
             clean_csv(line.strip())
@@ -43,17 +50,31 @@ def calculate_accuracy(csv_test_list, csv_ref_list, file_name):
             align_out = align_trxn(test_trxn, ref_trxn)
             total_edit_distance += align_out[2]
 
+            for op in align_out[3]:
+                if op not in ops_dict:
+                    ops_dict[op] = 0
+                ops_dict[op] += 1
+
             if align_out[2] > 0:
-                with open("./errors/" + file_name + ".txt", "a") as error_file:
+
+                error_dict[key] = align_out
+
+                with open("./errors/" + file_name + "_errors.txt", "a") as error_file:
                     error_file.write(key + "\n")
                     error_file.write("test: " + " ".join(align_out[0]) + "\n")
                     error_file.write("ref:  " + " ".join(align_out[1]) + "\n")
                     error_file.write("edit distance: " + str(align_out[2]) + "\n\n")
+                
 
     print("total phones in reference:", total_ref_phones)
     print("total edit distance:      ", total_edit_distance)
     print("phone error rate:         ", total_edit_distance / total_ref_phones)
 
+    if len(ops_dict) > 0:
+        with open("./errors/" + file_name + "_ops.txt", "w") as ops_file:
+            for op, count in sorted(ops_dict.items(), key=lambda item: item[1], reverse=True):
+                ops_file.write(f"Gold: {op[0]}, Pred: {op[1]}: {count}\n")
+    return ops_dict, error_dict
 
 def compute_per_cv(held_out_lines, apply_stdout):
     """
