@@ -1,0 +1,680 @@
+0156.110816.035620.0004
+test: k a * u l a y aw
+ref:  k a q u l a y aw
+edit distance: 1
+
+0156.110816.035620.0022
+test: b a g a *
+ref:  b a g a q
+edit distance: 1
+
+0156.110816.035620.0026
+test: b a * b a *
+ref:  b a q b a q
+edit distance: 2
+
+0156.110816.035620.0027
+test: g u l u g u d
+ref:  g u l u g o d
+edit distance: 1
+
+0156.110816.035620.0029
+test: k a m * ay
+ref:  k a m a y
+edit distance: 2
+
+0156.110816.035620.0115
+test: d a q i ng
+ref:  d a * i ng
+edit distance: 1
+
+0156.110816.035620.0155
+test: k a m a k a q i l a n
+ref:  k a m a k * * ay l a n
+edit distance: 3
+
+0156.110816.035620.0160
+test: q i p u i p o
+ref:  q i p u i p u
+edit distance: 1
+
+0156.110816.035620.0161
+test: m a q a r aw
+ref:  m a q a er aw
+edit distance: 1
+
+0156.110816.035620.0162
+test: b i g l a a ng p a g b a h a *
+ref:  b i g l a a ng p a g b a h a q
+edit distance: 1
+
+0156.110816.035620.0165
+test: h a l u m i g m i *
+ref:  h a l u m i k m i g
+edit distance: 2
+
+0156.110816.035620.0166
+test: b u g s o * * ng h a ng i n
+ref:  b u g s o n a ng h a ng i n
+edit distance: 2
+
+0156.110816.035620.0167
+test: h a l u m i g m i *
+ref:  h a l u m i g m i g
+edit distance: 1
+
+0156.110816.035620.0168
+test: q u l a n
+ref:  * u l a n
+edit distance: 1
+
+0156.110816.035620.0181
+test: d i t o s a
+ref:  d i t o * *
+edit distance: 2
+
+0156.110816.035620.0189
+test: i k a l a b i m p i t o ng
+ref:  i k a l a b i m p i t u ng
+edit distance: 1
+
+0156.110816.035620.0196
+test: q i k a d a l a w a m p u t * * sh a m
+ref:  q i k a d a l a w a m p u t s i y a m
+edit distance: 3
+
+0156.110816.035620.0199
+test: i k a l a b i m p i t o ng
+ref:  i k a l a b i m p i t u ng
+edit distance: 1
+
+0156.110816.035620.0200
+test: i k a l a b i n t a t l o ng
+ref:  i k a l a b i n t a t l u ng
+edit distance: 1
+
+0156.110816.035620.0202
+test: n a h u l i q n a h u l i q
+ref:  n a h u l i * n a h u l i q
+edit distance: 1
+
+0156.110816.035620.0203
+test: b u l o b u l o y o u ng k a er a b a o q
+ref:  b u l o b * * * * o * * * * * * * l o *
+edit distance: 13
+
+0156.110816.035620.0215
+test: p a g p a l a q i n k a n a w * * a ng d i y o s
+ref:  p a g p a l a q i n k a n a w a n a ng d i y o s
+edit distance: 2
+
+0156.110816.035620.0217
+test: h a ng * a ng s a m u l i ng p a g k i k i t a
+ref:  h a ng g a ng s a m u l i ng p a g k i k i t a
+edit distance: 1
+
+0156.110816.035620.0223
+test: h a ng * a ng s a m u l i ng p a g k i k i t a
+ref:  h a ng g a ng s a m u l i ng p a g k i k i t a
+edit distance: 1
+
+0156.110816.035620.0231
+test: p a g p a l a q i n k a n a w * * a ng d i y o s
+ref:  p a g p a l a q i n k a n a w a n a ng d i y o s
+edit distance: 2
+
+0156.110816.035620.0236
+test: q a n o h o ng p a g k a q i n n a t i n ng a y o n
+ref:  q a n o h o ng p a g k a q i n n a t i n ng a y u n
+edit distance: 1
+
+0156.110816.035620.0241
+test: q a n o ng p a ng a l a n m o
+ref:  q a n u ng p a ng a l a n m o
+edit distance: 1
+
+0156.110816.035620.0245
+test: q a n o p o ng p a ng a l a n n i ny o
+ref:  q a n u p u ng p a ng a l a n n i ny o
+edit distance: 2
+
+0156.110816.035620.0246
+test: k u m u s t a h o k a y o q
+ref:  k a m u s t a h o k a y o q
+edit distance: 1
+
+0156.110816.035620.0249
+test: k u m u s t a k a
+ref:  k a m u s t a k a
+edit distance: 1
+
+0156.110816.035620.0250
+test: h i n d i q s i y a k u m a q i n n o
+ref:  h i n d i q * * sh a k u m a q i n n u
+edit distance: 4
+
+0156.110816.035620.0256
+test: g u r o b a s i m a r i s e l
+ref:  g u r u b a s i m a r i s e l
+edit distance: 1
+
+0156.110816.035620.0259
+test: b i b i l i q b a s i y a ng p a g k a q i n
+ref:  b i b i l i q b a sh a n a ng p a g k a q i n
+edit distance: 3
+
+0156.110816.035620.0261
+test: m a b a i t b a s i y a
+ref:  m a b a i t b a * * sh a
+edit distance: 3
+
+0156.110816.035620.0262
+test: b i b i l i q b a s i y a ng p a g k a q i n
+ref:  b i b i l i q b a sh a n a ng p a g k a q i n
+edit distance: 3
+
+0156.110816.035620.0264
+test: b i b i l i q b * * a ng p a g k a q i n s i m a r i s e l
+ref:  b i b i l i q b a n a ng p a g k a q i n s i m a r i s e l
+edit distance: 2
+
+0156.110816.035620.0265
+test: t u t u g t o g b a s i f r a n s i s k o * o q k a k a n t a
+ref:  t u t u g t o g b a s i f r a n s i s k o q o * k a k a n t a
+edit distance: 2
+
+0156.110816.035620.0266
+test: i t o n a a ng i k a l a w a ng q u l i t n a n a g q r o l l b * k * * ng k a n i l a ng p r e s y o q * * ng p r o d u k t * o a ng m a ng a k uh m p a ny * * a ng l a ng i s s i m u l a n o q o ng q i s a ng l i ng g o q
+ref:  i t o n a a ng i k a l a w a ng q u l i t n a n a g q r o * l b a k n a ng k a n i l a ng p r e s y o q n a ng p r o d u k t u n a ng m a ng a k o m p a ny a n a ng l a ng i s s i m u l a n o q o ng q i s a ng l i ng g o q
+edit distance: 11
+
+0156.110816.035620.0269
+test: m a g k a t er a b a h o q n a ng h i n d i q n a l u m u l u w a s * * ng m a * n i l a
+ref:  m a g k a t r a b a h o q n a ng h i n d i q * * l u m u l u w a s n a ng m a y n i l a
+edit distance: 6
+
+0156.110816.035620.0271
+test: i t oy m a t a p o s p u m a l o a ng p i s o s a a p a t n a p u t w a l o ng p i s o q a t * * sh a m n a s e n t i m o b a g o q t u l u y a ng m a g s a r a s a a p a t n a p u t w a l o ng p i s o q a t s a m p u ng s e n t i m o
+ref:  i t oy m a t a p o s p u m a l o a ng p i s o s a a p a t n a p u t w a l o ng p i s o q a t s i y a m n a s e n t i m o b a g o q t u l u y a ng m a g s a r a s a a p a t n a p u t w a l o ng p i s o q a t s a m p u ng s e n t i m o
+edit distance: 3
+
+0156.110816.035620.0272
+test: m a g l a l a q a * n * ng s a l a p i a ng d a l a w a ng b a n s a p a r a p o n d o h a n a ng m a ng a p r o y e k t o * * ng k a g a w a r a n
+ref:  m a g l a l a q a n n a ng s a l a p i a ng d a l a w a ng b a n s a p a r a p o n d o h a n a ng m a ng a p r o y e k t o n a ng k a g a w a r a n
+edit distance: 4
+
+0156.110816.035620.0273
+test: n a g l a r o n a m a n a ng p a l i t a * n * ng d o ly a r k a h a p o n s a p a g i t a * n * ng a p a t n a p u t w a l o ng p i s o q a t q a n i m n a p u t l i m a ng s e n t i m o h a ng g a ng a p a t n a p u t w a l o ng p i s o q a t p i t u m p u t l i m a ng s e n t i m o
+ref:  n a g l a r u n a m a n a ng p a l i t a n n a ng d o ly a r k a h a p o n s a p a g i t a n n a ng a p a t n a p u t w a l o ng p i s o q a t * a n i m n a p u t l i m a ng s e n t i m o h a ng g a ng a p a t n a p u t w a l o ng p i s o q a t p i t u m p u t l i m a ng s e n t i m o
+edit distance: 6
+
+0156.110816.035620.0274
+test: n a ng a ng a q i l a ng a * n * ng m a ng a p i l o t o a ng p a l
+ref:  n a ng a ng * * ay l a ng a n n a ng m a ng a p i l o t o a ng p a l
+edit distance: 5
+
+0156.110816.035620.0275
+test: d a h i l d i t o s a l i m a ng p o er sh y e n t o a ng i t a t a a s s a p r o d u k sh * o n * ng a s u k a l p a r a s a t a q o ng i t o
+ref:  d a h i l d i t o * * l i m a ng p o er sh y e n t o a ng i t a t a a s s a p r o d u k sh u n n a ng a s u k a l p a r a s a t a q u ng i t o
+edit distance: 6
+
+0156.110816.035620.0278
+test: m a g l a l a q a * n * ng s a l a p i a ng d a l a w a ng b a n s a p a r a p o n d o h a n a ng m a ng a p r o y e k t o * * ng k a g a w a r a n
+ref:  m a g l a l a q a n n a ng s a l a p i a ng d a l a w a ng b a n s a p a r a p o n d o h a n a ng m a ng a p r o y e k t o n a ng k a g a w a r a n
+edit distance: 4
+
+0156.110816.035620.0280
+test: d i n i s k w e n t o * * ng b a ng k o s e n t r a l a ng k a k a p u s a * n * ng d o ly a r
+ref:  d i n i s k w e n t o n a ng b a ng k o s e n t r a l a ng k a k a p u s a n n a ng d o ly a r
+edit distance: 4
+
+0156.110816.035620.0288
+test: q i s a ng d a q a n q a t d a l a w a m p u t l i m a ng m i ly o ng p i s o ng p o n d o p a r a s a g a w a d k a l i ng a
+ref:  q i s a ng d a q a n q a t d a l a w a m p u t l i m a ng m i ly o ng p i s o ng p u n d u p a r a s a g a w a d k a l i ng a
+edit distance: 2
+
+0156.110816.035620.0289
+test: m u l i q n a n a m a ng t u m a a s a ng p r e s y o q * * ng l a ng i s s a p a n d a q i g d i g a ng p a m i l i h a n s a p i n a k a * m a t a a s n a l e b e l n i t o s a k a s a y s a y a n
+ref:  m u l i q n a n a m a ng t u m a a s a ng p r e s y o q n a ng l a ng i s s a p a n d a q i g d i g a ng p a m i l i h a n s a p i n a k a q m a t a a s n a l e b e l n i t o s a k a s a y s a y a n
+edit distance: 3
+
+0156.110816.035620.0290
+test: i t oy m a t a p o s p u m a l o a ng p i s o s a a p a t n a p u t w a l o ng p i s o q a t * * sh a m n a s e n t i m o b a g o q t u l u y a ng m a g s a r a s a a p a t n a p u t w a l o ng p i s o q a t s a m p u ng s e n t i m o
+ref:  i t oy m a t a p o s p u m a l o a ng p i s o s a a p a t n a p u t w a l o ng p i s o q a t s i y a m n a s e n t i m o b a g o q t u l u y a ng m a g s a r a s a a p a t n a p u t w a l o ng p i s o q a t s a m p u ng s e n t i m o
+edit distance: 3
+
+0156.110816.035620.0292
+test: b u ng a i t o * * ng p a t u l oy n a p a g t a a s * * ng h a l a g * * a ng k r u d o s a p a n d a q i g d i g a ng p a m i l i h a n
+ref:  b u ng a i t o n a ng p a t u l oy n a p a g t a a s n a ng h a l a g a n a ng k r u d o s a p a n d a q i g d i g a ng p a m i l i h a n
+edit distance: 6
+
+0156.110816.035620.0293
+test: i t o n a a ng i k a l a w a ng q u l i t n a n a g q r o l l b * k * * ng k a n i l a ng p r e s y o q * * ng p r o d u k t o a ng m a ng a k uh m p a ny * * a ng l a ng i s s i m u l a n o q o ng q i s a ng l i ng g o q
+ref:  i t o n a a ng i k a l a w a ng q u l i t n a n a g q r o * l b a k n a ng k a n i l a ng p r e s y o q n a ng p r o d u k t u a ng m a ng a k o m p a ny a n a ng l a ng i s s i m u l a n * * u ng q i s a ng l i ng g o q
+edit distance: 13
+
+0156.110816.035620.0295
+test: m a ng a ng a l a k a l n a n i n i w a l a q n a l a l o ng l a l a g o q a ng n e g o s y o q s a l u ng s u d * * ng k o t a b a t o
+ref:  m a ng a ng a l a k a l n a n i n i w a l a q n a l a l o ng l a l a g o q a ng n e g o s y o q s a l u ng s o d n a ng k o t a b a t o
+edit distance: 3
+
+0156.110816.035620.0297
+test: q i p a g p a p a t u l oy * * ng q a d m i n i s t r a sh o n a ng n a s i m u l a n n i t o q u p a ng m a b a y a r a n n a a ng l a h a t * * ng u t a ng n i t o n a s i y a ng l a l o ng n a g p a p a h i r a p s a m a ng a p i l i p i n o p a r a s a k a b u t i h a * n * ng s a m b a y a n a ng p i l i p i n o
+ref:  q i p a g p a p a t u l oy n a ng q a d m i n i s t r a sh u n a ng n a s i m u l a n n i t o q u p a ng m a b a y a r a n n a a ng l a h a t n a ng u t a ng n i t o n a s i y a ng l a l o ng n a g p a p a h i r a p s a m a ng a p i l i p i n o p a r a s a k a b u t i h a n n a ng s a m b a y a n a ng p i l i p i n o
+edit distance: 7
+
+0156.110816.035620.0298
+test: k * * e l a ng a ng m a q i r r e h i s t r o a ng q i s a ng b a g o ng n e g o s y o q s a q i b a t q i b a ng q a * e n sh * * a ng g o b y e er n o
+ref:  k a q i l a ng a ng m a q i * r e h i s t r o a ng q i s a ng b a g o ng n e g o s y o q s a q i b a t q i b a ng * a h e n sh a n a ng g o b y e er n o
+edit distance: 8
+
+0156.110816.035620.0300
+test: p a g q u n l a d * * ng q e k o n o m i y * * a ng b a n s a p a k i k i n a b a ng a * n * ng l a h a t * * ng s e k t o r
+ref:  p a g q u n l a d n a ng q e k o n o m i y a n a ng b a n s a p a k i k i n a b a ng a n n a ng l a h a t n a ng s e k t o r
+edit distance: 8
+
+0156.110816.035620.0303
+test: m a ng a g a m i t s a k o n s t r u k sh o n
+ref:  m a ng a g a m i t s a k u n s t er a k sh o n
+edit distance: 3
+
+0156.110816.035620.0304
+test: p u m a l o a ng u t a ng * * ng g o b y e er n o s a t a t l o ng t r i ly o n q a t w a l u m p u t * * sh a m n a m i ly o ng p i s o
+ref:  p u m a l o a ng u t a ng n a ng g o b y e er n o s a t a t l u ng t r i ly o n q a t w a l u m p u t s i y a m n a m i ly o ng p i s o
+edit distance: 6
+
+0156.110816.035620.0307
+test: p a t u l oy a ng p a m a m a y a g p a g * * ng h a l a g * * a ng p i s o k o n t r a s a d o ly a r s a l o q o b * * ng p i t o ng t a o n
+ref:  p a t u l oy a ng p a m a m a y a g p a g n a ng h a l a g a n a ng p i s o k o n t r a s a d o ly a r s a l o q o b n a ng p i t o ng t a o n
+edit distance: 6
+
+0156.110816.035620.0310
+test: p a g t a a s * * ng s a h o d i s u s u l o ng p a r a s a m a ng a p a m p u b l i k o ng m a ng g a g a w a
+ref:  p a g t a a s n a ng s a h u d i s u s u l o ng p a r a s a m a ng a p a m p u b l i k o ng m a ng g a g a w a
+edit distance: 3
+
+0156.110816.035620.0313
+test: p u m a l o s a a p a t n a p u t p i t o ng p i s o q a t d a l a w a m p u t q i s a ng s e n t i m o a ng p i s o s a l o q o b * * ng q a n i m n a t a o n
+ref:  p u m a l o s a a p a t n a p u t p i t u ng p i s o q a t d a l a w a m p u t q i s a ng s e n t i m o a ng p i s o s a l o q o b n a ng * a n i m n a t a o n
+edit distance: 4
+
+0156.110816.035620.0314
+test: s a k a b i l a n i t o n a g m a m a t i g a s a ng m a ng a m a ng g a g a w a n a q i g i i t a ng k a n i l a ng k a h i l i ng a n
+ref:  s a k a b i l a n i t o n a g m a m a t i g a s a ng m a ng a m a ng g a g a w a n a * i g i i t a ng k a n i l a ng k a h i l i ng a n
+edit distance: 1
+
+0156.110816.035620.0317
+test: n a k a k a k a q i n k a b * * a ng m a q a y o s
+ref:  n a k a k a k a q i n k a b a n a ng m a q a y o s
+edit distance: 2
+
+0156.110816.035620.0318
+test: q a n o b a a ng m a b i s a ng g a m o t d i t o s a
+ref:  q a n o b a a ng m a b i s a ng g a m o t d i t o * *
+edit distance: 2
+
+0156.110816.035620.0321
+test: k u m a k a q i n k a b * * a ng m a q a y o s
+ref:  k u m a k a q i n k a b a n a ng m a q a y o s
+edit distance: 2
+
+0156.110816.035620.0326
+test: h i n d i q q a k o m a k a k a q i * n * ng m a q a y o s
+ref:  h i n d i q q a k o m a k a k a q i n n a ng m a q a y o s
+edit distance: 2
+
+0156.110816.035620.0329
+test: h i n d i q s i y a m a k a h i ng * * a ng q a y o s
+ref:  h i n d i q * * sh a m a k a h i ng a n a ng q a y o s
+edit distance: 5
+
+0156.110816.035620.0333
+test: n a k a k a s a m a s a k a l u s u g a n a ng s o b r a ng p a g q i n o m * * ng a l a k
+ref:  n a k a k a s a m a s a k a l u s u g a n a ng s o b r a ng p a g q i n o m n a ng a l a k
+edit distance: 2
+
+0156.110816.035620.0336
+test: m a g a n d a ng h a p o n h o d o k t o r
+ref:  m a g a n d a ng h a p o n h u d o k t o r
+edit distance: 1
+
+0156.110816.035620.0337
+test: * i w a s k a s a m a ng a m a q a a l a t
+ref:  q i w a s k a s a m a ng a m a q a a l a t
+edit distance: 1
+
+0156.110816.035620.0338
+test: h u w a g k a ng k u m a q i * n * ng m a ng a m a q a a l a t
+ref:  h u w a g k a ng k u m a q i n n a ng m a ng a m a q a a l a t
+edit distance: 2
+
+0156.110816.035620.0340
+test: q i s a ng l i ng g o q n a p o q a k o ng q i n u * u b o q
+ref:  q i s a ng l i ng g o q n a p o q a k o ng q i n u q u b * u
+edit distance: 3
+
+0156.110816.035620.0343
+test: w a l a ng m a p a i t n a t u t o ng s a t a q o ng n a g u g u t o m
+ref:  w a l a ng m a p a i t n a t u t o ng s a t a q u ng n a g u g u t o m
+edit distance: 1
+
+0156.110816.035620.0344
+test: k a p a g a ng q i l o g ay m a t a h i m i k q a s a h a n m o q a t m a l a l i m k a p a g a ng q i l o g ay m a q i * ng ay q a s a h a n m o q a t m a b a b aw
+ref:  k a p a g a ng q i l o g ay m a t a h i m i k q a s a h a n m o q a t m a l a l i m k a p a g a ng q i l o g ay m a q i n g ay q a s a h a n m o q a t m a b a b aw
+edit distance: 2
+
+0156.110816.035620.0345
+test: a ng t a q o ng m a q i ng g i t i n l u m i g a y a m a n ay s a w i r i n
+ref:  a ng t a q u ng m a * i ng g i t i n l u m i g a y a m a n ay s a w i r i n
+edit distance: 2
+
+0156.110816.035620.0346
+test: k u ng q a n o a ng p u n o s i y a a ng b u ng a
+ref:  k u ng q a n o a ng p u n o * * sh a a ng b u ng a
+edit distance: 3
+
+0156.110816.035620.0347
+test: a ng h i n d i q m a r u n o ng l u m i ng o n s a p i n a ng g a l i ng a n ay h i n d i q m a k a r a r a t i ng s a p a r o r * * o n a n
+ref:  a ng h i n d i q m a r u n o ng l u m i ng o n s a p i n a ng g a l i ng a n ay h i n d i q m a k a k a r a t i ng s a p a r o r o q o n a n
+edit distance: 3
+
+0156.110816.035620.0348
+test: * q a a n h i n p a a ng d a m o k u ng p a t ay n a a ng k a b a y o q
+ref:  a q * a n h i n p a a ng d a m o k u ng p a t ay n a a ng k a b a y o q
+edit distance: 2
+
+0156.110816.035620.0350
+test: a ng s a k i t * * ng k a l i ng k i ng a n d a m d a m i * n * ng b u q o ng k a t a w a n
+ref:  a ng s a k i t n a ng k a l i ng k i ng a n d a m d a m i n n a ng b u q o ng k a t a w a n
+edit distance: 4
+
+0156.110816.035620.0354
+test: h u w a g m a g b i l a ng * * ng m a n o k h a ng g a t h i n d i q n a p i p i s a a ng i t l o g
+ref:  h u w a g m a g b i l a ng n a ng m a n o k h a ng g a t h i n d i q n a p i p i s a a ng i t l o g
+edit distance: 2
+
+0156.110816.035620.0357
+test: k u ng q a n o a ng p u n o s i y a a ng b u ng a
+ref:  k u ng q a n o a ng p u n o * * sh a a ng b u ng a
+edit distance: 3
+
+0156.110816.035620.0359
+test: b a t a t m a t a n d a q a t s a m p u ng m a ng a b a * b a * * ay m a r u n o ng b u m a s a q a t s u m u l a t * * ng t a l a g a ng p a g s u l a t n a t i ng m a ng a t a g a l o g
+ref:  b a t a t m a t a n d a q a t s a m p u ng m a ng a b a q b a q i ay m a r u n o ng b u m a s a q a t s u m u l a t n a ng t a l a g a ng p a g s u l a t n a t i ng m a ng a t a g a l o g
+edit distance: 5
+
+0156.110816.035620.0361
+test: i t o ng k a t a l g a l u g a n n a p i n a m a m a h a l a q a n n a ng q u n a ng p a n a h o * n * ng q a t i ng t u n ay n a m a ng a k a b a b a y a n
+ref:  i t o ng k a t a * g a l u g a n n a p i n a m a m a h a l a q a n n a ng q u n a ng p a n a h o n n a ng q a t i ng t u n ay n a m a ng a k a b a b a y a n
+edit distance: 3
+
+0156.110816.035620.0364
+test: k a y a * o q m a ng a k a b a b a y a n q a t i ng i d i l a a ng b u l a g n a k a q i s i p a n q a t k u s a ng q i g u g o l s a k a g a l i ng a n a ng q a t i n l a k a s s a t u n ay q a t l o b o s n a p a g q a s a n a m a g t a g u m p ay s a n i l a l a y o ng k a g i n h a w a h a * n * ng b a y a n t i n u b u q a n
+ref:  k a y a q o * m a ng a k a b a b a y a n q a t i ng i d i l a a ng b u l a g n a k a q i s i p a n q a t k u s a ng q i g u g o l s a k a g a l i ng a n a ng q a t i n l a k a s s a t u n ay q a t l u b u s n a p a g q a s a n a m a g t a g u m p ay s a n i l a l a y o ng k a g i n h a w a h a n n a ng b a y a n t i n u b u q a n
+edit distance: 6
+
+0156.110816.035620.0366
+test: b u n t o ng h i n i ng a q a t h i n a g p i s * * ng m a k a p a l n a q u l i l a
+ref:  b u n t u ng h i n i ng a q a t h i n a g p i s n a ng m a k a p a l n a q u l i l a
+edit distance: 3
+
+0156.110816.035620.0367
+test: b a y a q a n m o a ng w i k * * a ng m a p a n l i n l a ng n a m a ch i ng q a k o a ng q a a k y a t q a t m a m i m i t a s p a r a s a q i y o q
+ref:  b a y a q a n m o a ng w i k a n a ng m a p a n l i n l a ng n a m a ch i ng q a k o a ng q a a k y a t q a t m a m i m i t a s p a r a s a q i y o q
+edit distance: 2
+
+0156.110816.035620.0370
+test: n a ng m a k i t * * a ng m a * ch i ng a ng m a ng a b u ng a ng h i n o g n a n a ng a g b i t i n s a p a g i t a * n * ng m a l a l a k i t l u n t i q a ng d a h o n s i y a ay q u m a k y a t m a t u l i ng n a m i t a s q a t k u m a q i n n a ng k u m a q i n
+ref:  n a ng m a k i t a n a ng m a t s i ng a ng m a ng a b u ng a ng h i n o g n a n a ng a g b i t i n s a p a g i t a n n a ng m a l a l a k i t l u n t i q a ng d a h o n * * sh a ay q u m a k y a t m a t u l i ng n a m i t a s q a t k u m a q i n n a ng k u m a q i n
+edit distance: 9
+
+0156.110816.035620.0371
+test: ng u n i t y a m a ng q a k oy m a p a g b i g ay p a m i m * * i ly i n k i t * * a ng q i y o ng k a m a t a y a n
+ref:  ng u n i t y a m a ng q a k oy m a p a g b i g ay p a m i m i l i q i n k i t a n a ng q i y u ng k a m a t a y a n
+edit distance: 6
+
+0156.110816.035620.0372
+test: i t oy q i s a ng m a g a n d a ng p u n o m * ay m a l a l a k i t l u n t i q a ng d a h o n q a t m * ay m a ng a * u g a t p a ng w a r i k a b u b u w a l l a m a ng p a g k a t a p o s * * ng b a g y o q
+ref:  i t oy q i s a ng m a g a n d a ng p u n o m a y m a l a l a k i t l u n t i q a ng d a h o n q a t m a y m a ng a q u g a t p a ng w a r i k a b u b u w a l l a m a ng p a g k a t a p o s n a ng b a g y o q
+edit distance: 7
+
+0156.110816.035620.0373
+test: n a s a k t a ng l u b h a q a ng m a * ch i ng q a t n a s u g a t a n a ng k a t a w a n n a ng b u m a b a
+ref:  n a s a k t a ng l u b h a q a ng m a t s i ng q a t n a s u g a t a n a ng k a t a w a n n a ng b u m a b a
+edit distance: 2
+
+0156.110816.035620.0374
+test: a ng l u s o ng a ng l u s o ng a ng s a g o t * * ng p a g o ng n a t a t a k o t q a k o ng m a l u n o d
+ref:  a ng l u s o ng a ng l u s o ng a ng s a g o t n a ng p a g o ng n a t a t a k o t q a k o ng m a l u n o d
+edit distance: 2
+
+0156.110816.035620.0377
+test: ng u n i t a ng a l i m a ng oy h i n d i q m a q a a r i ng q u m a k y a t s a p u n o ng k a h oy a ng p a r i r a l a ng i t o ay m a g i g i ng l a l o ng t a m a s a p a g o ng s a q a m i ng p a n i w a l a q a ng a l i m a ng o ng m * ay s i p i t q a t m a ng a p a q a ay m a q a a r i ng q u m a k y a t n a k a t u l a d * * ng m a * ch i ng m a d a l i ng n a q a a k y a t * * ng a l i m a ng o a ng a l i n m a ng b a t o m o o g q a t q i b a p a
+ref:  ng u n i t a ng a l i m a ng oy h i n d i q m a q a a r i ng q u m a k y a t s a p u n o ng k a h oy a ng p a r i r a l a ng i t o ay m a g i g i ng l a l o ng t a m a s a p a g o ng s a q a m i ng p a n i w a l a q a ng a l i m a ng o ng m a y s i p i t q a t m a ng a p a q a ay m a q a a r i ng q u m a k y a t n a k a t u l a d n a ng m a t s i ng m a d a l i ng n a q a a k y a t n a ng a l i m a ng o a ng a l i n m a ng b a t o m o o g q a t q i b a p a
+edit distance: 8
+
+0156.110816.035620.0379
+test: n a s a k u w e n t o ng p i l i p i n o a ng k a t a l a s a * n * ng q i s i p q a t k a l i n a w a * n * ng p a g s a s a l a y s ay s a m a n t a l a ng s a k u w e n t o ng h a p o n n a m a n ay n a r * * o n a ng k a q u n l a r a t k a b i h a s n a n
+ref:  n a s a k u w e n t o ng p i l i p i n o a ng k a t a l a s a n n a ng q i s i p q a t k a l i n a w a n n a ng p a g s a s a l a y s ay s a m a n t a l a ng s a k u w e n t o ng h a p o n n a m a n ay n a r u q o n a ng k a q u n l a r a t k a b i h a s n a n
+edit distance: 6
+
+0156.110816.035620.0382
+test: h i g i t r i t o a ng p a r i r a l a ng i t o ay t u m u b o q n o q o n d i n q a t n a g i ng q i s a ng p u n o ng k a h oy a ng p u n o ng k a h oy ay n a h i t i k s a b u ng * * a ng k a k i ay h i g i t n a n a b a b a g ay s a q i s a ng p u n o ng q s a g i ng k * ay s a b u t o * * ng k a k i
+ref:  h i g i t r i t o a ng p a r i r a l a ng i t o ay t u m u b o q n u q u n d i n q a t n a g i ng q i s a ng p u n o ng k a h oy a ng p u n o ng k a h oy ay n a h i t i k s a b u ng a n a ng k a k i ay h i g i t n a n a b a b a g ay s a q i s a ng p u n o ng q s a g i ng k a y s a b u t o n a ng k a k i
+edit distance: 8
+
+0156.110816.035620.0384
+test: a ng b a h a g i ng i t o ay t i l a q i s i n i ng i t * * ng q i l a ng d i m a t a l i n o ng m a n a n a l a y s ay q u p a ng m a b i g y a ng d a q a n m a r a h i l a ng k a q i b i g a * n * ng a l i m a ng o ng m a k a p a g h i g a n t i
+ref:  a ng b a h a g i ng i t o ay t i l a q i s i n i ng i t n a ng q i l a ng d i m a t a l i n o ng m a n a n a l a y s ay q u p a ng m a b i g y a ng d a q a n m a r a h i l a ng k a q i b i g a n n a ng a l i m a ng o ng m a k a p a g h i g a n t i
+edit distance: 4
+
+0156.110816.035620.0385
+test: l i h i m s a m a ng a m a m a m a y a n n o q o ng p a n a h o n n a q i y o n a ng m a ng a k a s t i l a ay m * ay n a h u l i ng q i s a ng q e ng k a n t a d o n a k a s u l u k u y a n n i l a ng q i s i n a s a q i l a l i m s a q e k s o er s i s m o q i s a ng p a m a m a r a q a * n * ng s i m b a h a n q u p a ng s u g * * i n a ng m a s a m a ng q i s p i r i t u n a s u m a p i s a k a t a w a * n * ng q e ng k a n t a d o
+ref:  l i h i m s a m a ng a m a m a m a y a n n * w o ng p a n a h o n n a q i y u n a ng m a ng a k a s t i l a ay m a y n a h u l i ng q i s a ng q e ng k a n t a d o n a k a s a l u k u y a n n i l a ng q i s i n a s a q i l a l i m s a q e k s e er s i s m o q i s a ng p a m a m a r a q a n n a ng s i m b a h a n q u p a ng s u g p o i n a ng m a s a m a ng q i s p i r i t u n a s u m a p i s a k a t a w a n n a ng q e ng k a n t a d o
+edit distance: 13
+
+0156.110816.035620.0386
+test: p u m u w e s t o s i y a s a q u n a b i l a ng p a g p a p a k i l a l a ng s i y a a ng p i n u n o * * ng m a ng a i t o
+ref:  p u m * w e s t o * * sh a s a q u n a b i l a ng p a g p a p a k i l a l a ng * * sh a a ng p i n u n o n a ng m a ng a i t o
+edit distance: 9
+
+0156.110816.035620.0387
+test: m a h i g i t q i s a ng t a o n p a l a ng ay n a g a g a w a * * ny a ng b u n u t i n a ng m a ng a p a k o s a k a n i l a ng s a h i g s a k a * ny a ng p a g l a l a r o
+ref:  m a h i g i t q i s a ng t a o n p a l a ng ay n a g a g a w a n i y a ng b u n u t i n a ng m a ng a p a k o s a k a n i l a ng s a h i g s a k a n y a ng p a g l a l a r o
+edit distance: 5
+
+0156.110816.035620.0388
+test: q i s a ng g a b i n a g l a l a k a d s i q i p u t q i p u t p a t u ng u s a b a h ay * * ng k a * ny a ng k a q i b i g a n
+ref:  q i s a ng g a b i n a g l a l a k a d s i q i p u t q i p u t p a t u ng u s a b a h ay n a ng k a n y a ng k a q i b i g a n
+edit distance: 4
+
+0156.110816.035620.0392
+test: b u k o d d o q o n b i n i y a y a q a n d i n n i b a t h a l a a ng s a ng g o l * * ng p a m b i h i r a ng l a k a s q a t k i s i g s i m b o l o * * ng l a k a s * * ng p a n a n a l i g q a t k a g a n d a h a ng l o q o b n a i p i n a m a l a s * * ng k a * ny a ng m a ng a m a g u l a ng
+ref:  b u k u d d u q o n b i n i y a y a q a n d i n n i b a t h a l a a ng s a ng g o l n a ng p a m b i h i r a ng l a k a s q a t k i s i g s i m b u l o n a ng l a k a s n a ng p a n a n a l i g q a t k a g a n d a h a ng l o q o b n a i p i n a m a l a s n a ng k a n y a ng m a ng a m a g u l a ng
+edit distance: 13
+
+0156.110816.035620.0393
+test: a ng l u s o ng a ng l u s o ng a ng s a g o t * * ng p a g o ng n a t a t a k o t q a k o ng m a l u n o d
+ref:  a ng l u s o ng a ng l u s o ng a ng s a g o t n a ng p a g o ng n a t a t a k o t q a k o ng m a l u n o d
+edit distance: 2
+
+0156.110816.035620.0394
+test: ng u n i t h a b a ng l u m a k a s q a t t u m i t i n d i q a ng p a g q i h i p n i y a ng h a ng i n ay s i y a n a m a ng h i g p i t * * ng h a w a k * * ng l a l a k i s a k a * ny a ng p a ng g i n aw
+ref:  ng u n i t h a b a ng l u m a k a s q a t t u m i t i n d i q a ng p a g q i h i p ny a n a ng h a ng i n ay * * sh a n a m a ng h i g p i t n a ng h a w a k n a ng l a l a k i s a k a n y a ng p a ng g i n aw
+edit distance: 12
+
+0156.110816.035620.0397
+test: g a n u n p a m a n s i l a ay m a s a y a s a k a n i l a ng b u h ay q a t m a t u l u ng i n s a k a p w a l a l u n a t u l a d n i l a ng n a g h i h i r a p q a t s a m a ng a m * ay s a k i t
+ref:  g a n u n p a m a n s i l a ay m a s a y a s a k a n i l a ng b u h ay q a t m a t u l u ng i n s a k a p w a l a l u n a t u l a d n i l a ng n a g h i h i r a p q a t s a m a ng a m a y s a k i t
+edit distance: 2
+
+0156.110816.035620.0398
+test: l i h i m s a m a ng a m a m a m a y a n n o q o ng p a n a h o n n a q i y o n a ng m a ng a k a s t i l a ay m * ay n a h u l i ng q i s a ng q e ng k a n t a d o n a k a s u l u k u y a n n i l a ng q i s i n a s a q i l a l i m s a q e k s o er s i s m o q i s a ng p a m a m a r a q a * n * ng s i m b a h a n q u p a ng s u g * * i n a ng m a s a m a ng q i s p i r i t u n a s u m a p i s a k a t a w a * n * ng q e ng k a n t a d o
+ref:  l i h i m s a m a ng a m a m a m a y a n n o q o ng p a n a h o n n a q i y o n a ng m a ng a k a s t i l a ay m a y n a h u l i ng q i s a ng q e ng k a n t a d o n a k a s a l u k u y a n n i l a ng q i s i n a s a q i l a l i m s a q e k s o er s i s m o q i s a ng p a m a m a r a q a n n a ng s i m b a h a n q u p a ng s u g p o i n a ng m a s a m a ng q i s p i r i t u n a s u m a p i s a k a t a w a n n a ng q e ng k a n t a d o
+edit distance: 9
+
+0156.110816.035620.0399
+test: h i n d i q q a k o d u w a g a ng n a g a g a l i t n a s a g o t * * ng a l i t a p t a p
+ref:  h i n d i q q a k o d u w a g a ng n a g a g a l i t n a s a g u t n a ng a l i t a p t a p
+edit distance: 3
+
+0156.110816.035620.0400
+test: s a m a h a b a ng p a n a h o n n a ng k a n i l a ng p a g s a s a m a ay h i n d i q s i l a q a g a d n a g k a q a n a k
+ref:  s a m a h a b a ng p a n a h o n n a ng k a n i l a ng p a g s a s a m a ay h i n d i q s i l a * a g a d n a g k a q a n a k
+edit distance: 1
+
+0156.110816.035620.0401
+test: p a g k a r a q a * n * ng q i l a ng s a n d a l i q a ng p a g o ng ay l u m i t aw n a l u m a l a ng oy q a t n a g t a t a w a s a n a d a y a ng m a * ch i ng
+ref:  p a g k a r a q a n n a ng q i l a ng s a n d a l i q a ng p a g o ng ay l u m i t aw n a l u m a l a ng oy q a t n a g t a t a w a s a n a d a y a ng m a t s i ng
+edit distance: 4
+
+0156.110816.035620.0403
+test: p i n a s a * n * ng m a * ch i ng a ng p a g o ng n a g t u ng u s a t a b i ng q i l o g q a t s a k a q i t i n a p o n a ng k a ny a ng d a l a s a t u b i g
+ref:  p i n a s a n n a ng m a t s i ng a ng p a g o ng n a g t u ng u s a t a b i ng q i l u g q a t s a k a q i t i n a p o n a ng k a ny a ng d a l a s a t u b i g
+edit distance: 5
+
+0156.110816.035620.0404
+test: k i n a b u k a s a n m a a g a i t o ng g u m i s i ng q a t i p i n a m a l i t a s a l a h a t * * ng k a p i t b a h ay n a k a y a d a w l a g i ng m * ay d a l a ng q i l aw s i q i p u t q i p u t ay d a h i l d u w a g i t o
+ref:  k i n a b u k a s a n m a a g a i t u ng g u m i s i ng q a t i p i n a m a l i t a s a l a h a t n a ng k a p i t b a h ay n a k a y a d a w l a g i ng m a y d a l a ng q i l aw s i q i p u t q i p u t ay d a h i l d u w a g i t o
+edit distance: 5
+
+0156.110816.035620.0405
+test: b u k o d d o q o n b i n i y a y a q a n d i n n i b a t h a l a a ng s a ng g o l * * ng p a m b i h i r a ng l a k a s q a t k i s i g s i m b o l o * * ng l a k a s * * ng p a n a n a l i g q a t k a g a n d a h a ng l o q o b n a i p i n a m a l a s * * ng k a * ny a ng m a ng a m a g u l a ng
+ref:  b u k o d d u q o n b i n i y a y a q a n d i n n i b a t h a l a a ng s a ng g o l n a ng p a m b i h i r a ng l a k a s q a t k i s i g s i m b u l o n a ng l a k a s n a ng p a n a n a l i g q a t k a g a n d a h a ng l u q u b n a i p i n a m a l a s n a ng k a n y a ng m a ng a m a g u l a ng
+edit distance: 14
+
+0156.110816.035620.0406
+test: q a t g a y * * a ng b a t a ng g a m u g a m o s i y a ay n a k a t a k d a ng m a m a t ay n a m a er t i r p a r a s a q i s a ng d a k i l a ng m i t h i q i n
+ref:  q a t g a y a n a ng b a t a ng g a m u g a m o * * sh a ay n a k a t a k d a ng m a m a t ay n a m a er t i r p a r a s a q i s a ng d a k i l a ng m i t h i q i n
+edit distance: 5
+
+0156.110816.035620.0408
+test: d a h i l s a k a n i l a ng i p i n a m a l a s n a k a b u t i h a n p a g t i t i * i s q a t p a n a n a l i g ay k i n a q a w a q a n d i n s i l a n i b a t h a l a q a t d i n i n i g a ng k a n i l a ng p a n a l a ng i n n a m a g k a r o q o * n * ng s a er i l i ng q a n a k
+ref:  d a h i l s a k a n i l a ng i p i n a m a l a s n a k a b u t i h a n p a g t i t i q i s q a t p a n a n a l i g ay k i n a q a w a q a n d i n s i l a n i b a t h a l a q a t d i n i n i g a ng k a n i l a ng p a n a l a ng i n n a m a g k a r o q o n n a ng s a er i l i ng q a n a k
+edit distance: 3
+
+0156.110816.035620.0409
+test: d i n a l a n i h a g i b i s a ng m a ng a k a l a l a k i h a n s a p a q a n a * n * ng y o ng i b q a t t i n a ng k a n i l a e t o ng p a s u k i n
+ref:  d i n a l a n i h a g i b i s a ng m a ng a k a l a l a k i h a n s a p a * a n a n n a ng y a ng i b q a t t i n a ng k a n i l a i t o ng p a s u k i n
+edit distance: 5
+
+0156.110816.035620.0410
+test: a ng p a g k a g k a q i s ay p a g b a b a y a n i h a n
+ref:  a ng p a g k a g k a q i s ay p a ng b a b a y a n i h a n
+edit distance: 1
+
+0156.110816.035620.0413
+test: p a r a q i s o ng d a t i h i n a n a p q i n i b i g
+ref:  p a er a q i s o ng d a t i h i n a n a p q i n i b i g
+edit distance: 1
+
+0156.110816.035620.0414
+test: q i k aw ay p i l i p i n o ng d a p a t n a m a g h a r i
+ref:  q i k * ay p i l i p i n o na d a p a t * * m a g h a r i
+edit distance: 4
+
+0156.110816.035620.0417
+test: q i n a t a w a g ng a n i k i t a n i t a t ay
+ref:  t i n a t a w a g ng a n i k i t a n i t a t ay
+edit distance: 1
+
+0156.110816.035620.0418
+test: s a k a ny a ng s a l i t a ng k a l o q o b * * ng l a ng i t
+ref:  s a k a ny a ng s a l i t a ng k a l u q o b n a ng l a ng i t
+edit distance: 3
+
+0156.110816.035620.0422
+test: b u k s a n m o a ng t e l e b i sh o n n a t a
+ref:  b u k s a n m o a ng t e l e b i sh u n n a t a
+edit distance: 1
+
+0156.110816.035620.0423
+test: k a t u l a d * * ng q i b o ng n a s a h i m p a p a w i d
+ref:  k a t u l a d n a ng q i b o ng n a s a h i m p a p a w i d
+edit distance: 2
+
+0156.110816.035620.0429
+test: * * ng
+ref:  n a ng
+edit distance: 2
+
+0156.110816.035620.0433
+test: m a l a y o q
+ref:  m a l a y u q
+edit distance: 1
+
+0156.110816.035620.0437
+test: o q
+ref:  o *
+edit distance: 1
+
+0156.110816.035620.0453
+test: p a q a n a n
+ref:  p a * a n a n
+edit distance: 1
+
+0156.110816.035620.0456
+test: m a q i ng a t
+ref:  m a * i ng a t
+edit distance: 1
+
+0156.110816.035620.0470
+test: k * ay ay
+ref:  k a y ay
+edit distance: 2
+
+0156.110816.035620.0482
+test: k a s a * u l u y a ng
+ref:  k a s a l u k u y a ng
+edit distance: 2
+
+0156.110816.035620.0496
+test: p a m b a n s a ng
+ref:  p a m b a n s a *
+edit distance: 1
+
+0156.110816.035620.0503
+test: n o q o ng
+ref:  n u q o ng
+edit distance: 1
+
+0156.110816.035620.0511
+test: p a g q i * i s a
+ref:  p a g q i q i s a
+edit distance: 1
+
+0156.110816.035620.0512
+test: h i g a n t e ng
+ref:  h i g a n t i ng
+edit distance: 1
+
+0156.110816.035620.0517
+test: g a g * a m i t i n
+ref:  g a g q a m i t i n
+edit distance: 1
+
+0156.110816.035620.0519
+test: n i y u g
+ref:  n i y o g
+edit distance: 1
+
+0156.110816.035620.0526
+test: q u m a b o t
+ref:  q u m a b u t
+edit distance: 1
+
+0156.110816.035620.0534
+test: s u p o er t a q
+ref:  s u p o er t a *
+edit distance: 1
+
+0156.110816.035620.0540
+test: k a s u i
+ref:  k a s * uy
+edit distance: 2
+
+0156.110816.035620.0548
+test: p o
+ref:  p u
+edit distance: 1
+
