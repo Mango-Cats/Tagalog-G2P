@@ -199,3 +199,57 @@ def collect_errors(ref, hyp):
         'ins_examples':      dict(ins_examples),
         'sub_pair_examples': dict(sub_pair_examples),
     }
+
+
+# Tagalog vowel-height mergers: o~u and e~i are historically allophonic and are a
+# recurring G2P failure mode. Each group is the set of base vowels that get confused.
+_DEFAULT_VOWEL_GROUPS = {"o/u": {"o", "u"}, "e/i": {"e", "i"}}
+
+
+def _base_vowel(ph):
+    """Strip combining marks and the length modifier (ː) so oː/õ fold to o."""
+    return ''.join(
+        c for c in ph
+        if not unicodedata.category(c).startswith('M') and c != _LENGTH
+    )
+
+
+def vowel_confusion(ref, hyp, groups=None):
+    """Count directed vowel-height substitutions per group (e.g. o↔u, e↔i).
+
+    Reuses collect_errors(); a substitution (r→h) counts for a group when the
+    base vowels of r and h are both in that group and differ. Length/diacritic
+    variants (oː, õ) fold to their base vowel via _base_vowel.
+
+    Args:
+        ref, hyp: dicts of {word: [phones]} (only words in both are scored).
+        groups:   {label: set of base vowels}; defaults to o/u and e/i.
+
+    Returns {label: {"count": int,
+                     "by_pair": Counter{(ref_phone, hyp_phone): n},
+                     "examples": [example dicts],
+                     "rate": float}}   where rate = count / total substitutions.
+    """
+    if groups is None:
+        groups = _DEFAULT_VOWEL_GROUPS
+
+    err = collect_errors(ref, hyp)
+    n_sub = err['n_sub']
+
+    result = {}
+    for label, vowels in groups.items():
+        by_pair = Counter()
+        examples = []
+        for (r, h), c in err['sub_pair_counter'].items():
+            rb, hb = _base_vowel(r), _base_vowel(h)
+            if rb in vowels and hb in vowels and rb != hb:
+                by_pair[(r, h)] += c
+                examples.extend(err['sub_pair_examples'].get((r, h), []))
+        count = sum(by_pair.values())
+        result[label] = {
+            'count':    count,
+            'by_pair':  by_pair,
+            'examples': examples,
+            'rate':     count / n_sub if n_sub else 0.0,
+        }
+    return result
