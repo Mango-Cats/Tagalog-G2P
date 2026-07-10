@@ -22,4 +22,12 @@ scripts/test.wlist
 __pycache__/
 *.pyc
 
+# Python packaging / uv
+.venv/
+*.egg-info/
+
+# PyInstaller build output
+build/
+dist/
+
 /data

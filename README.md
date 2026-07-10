@@ -9,8 +9,10 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 `tagalog_g2p.py` transcribes Tagalog words to IPA using the WFST
 trained in `notebook/Wik_eval.ipynb` on `data/extra data/clean_tgl_wik.csv`
-(`notebook/train/cwik_model.fst`). Run it inside the project container
-(needs `phonetisaurus-g2pfst` on PATH); stdlib only, no install step.
+(`notebook/train/cwik_model.fst`). Run it inside the project container:
+it decodes with the Phonetisaurus Python binding when available (container's
+`/usr/local/bin/python3`), and otherwise falls back to shelling out to
+`phonetisaurus-g2pfst`. No install step.
 
 Output is always the single best pronunciation as space-separated phones,
 one line per input word.
@@ -30,3 +32,24 @@ To retrain the model, see `notebook/Wik_eval.ipynb`, or run:
 ```
 phonetisaurus-train --lexicon notebook/dicts/cwik_trainval.dict --seq2_del --model notebook/train/cwik_model
 ```
+
+## Standalone executable
+
+The CLI can be packaged as a single self-contained executable — model,
+Phonetisaurus binding, and OpenFst libraries all bundled — so it runs
+without Docker, Python, or a Phonetisaurus install. Build it inside the
+project container:
+
+```
+./scripts/build-executable.sh        # → dist/tagalog-g2p (~13 MB)
+```
+
+Then copy `dist/tagalog-g2p` anywhere and run it directly:
+
+```
+./tagalog-g2p araw                   # ʔ a ɾ a w
+```
+
+The executable targets Linux x86_64 with glibc ≥ 2.31 (any mainstream
+distro from ~2020 on, including WSL2). It is not a native Windows or macOS
+binary — those platforms would need Phonetisaurus rebuilt natively first.
