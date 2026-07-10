@@ -1,7 +1,5 @@
 # Taglog-G2P: WFST Grapheme-to-Phoneme Conversion Project on Tagalog.
 
-**By**: Enrique Aragon, Stephen Borja, Justin Ethan Ching, and Erin Gabrielle Chua.
-
 **Dataset**: Lee, J. L., Ashby, L. F.E., Garza, M. E., Lee-Sikka, Y., Miller, S., Wong, A., McCarthy, A. D., & Gorman, K. (2020). Massively multilingual pronunciation mining with WikiPron [Dataset]. https://github.com/CUNY-CL/wikipron
 
 **Motivation**: Grapheme-to-phoneme (G2P) conversion is a core component of speech technologies such as text-to-speech and automatic speech recognition, yet low-resource languages like Tagalog have little pronunciation data to train on.
