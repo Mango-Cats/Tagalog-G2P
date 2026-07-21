@@ -95,12 +95,22 @@ The pronunciation data used in the project is mined from Wiktionary by the
 WikiPron project (Lee et al., 2020), available at
 [github.com/CUNY-CL/wikipron](https://github.com/CUNY-CL/wikipron) under the
 Apache 2.0 license (the underlying Wiktionary data is CC BY-SA 3.0). The
-speech-corpus transcriptions come from Aquino & Tsang's ECE 198 project
-(*DSP01: A hybrid grapheme-to-phoneme and speech recognition system for
-automated phonetic transcription of speech data in Tagalog, Cebuano, and
-Hiligaynon*), which the helper code in [`utils/`](utils/) is also adapted
-from.
+speech-corpus transcriptions come from Aquino, Tsang, Lucas & de Leon's
+University of the Philippines Diliman project (*DSP01: A hybrid
+grapheme-to-phoneme and speech recognition system for automated phonetic
+transcription of speech data in Tagalog, Cebuano, and Hiligaynon*;
+published as "G2P and ASR techniques for low-resource phonetic
+transcription of Tagalog, Cebuano, and Hiligaynon," ISMAC 2019,
+https://doi.org/10.1109/ISMAC.2019.8836168), which the helper code in
+[`utils/`](utils/) is also adapted from — see [NOTICE](NOTICE).
 
 Raw data is expected in the `data/` directory (not tracked in git); the
 processed dictionaries and train/test splits the notebooks produce live in
 [`notebook/dicts/`](notebook/dicts/).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE), with one
+exception: the helper code in [`utils/`](utils/) is adapted from Aquino &
+Tsang's project (see [Data](#data) above) and is not covered by that
+license. See [NOTICE](NOTICE) for details.

@@ -1,0 +1,30 @@
+This repository is licensed under the MIT License (see LICENSE), with one
+exception:
+
+Third-party code: utils/
+--------------------------
+The following files are adapted from Angelina Aquino & Joshua Tsang's
+University of the Philippines Diliman undergraduate project, "DSP01: A
+hybrid grapheme-to-phoneme and speech recognition system for automated
+phonetic transcription of speech data in Tagalog, Cebuano, and Hiligaynon"
+(https://github.com/AngelAquino/g2p-asr; published as Aquino, Tsang, Lucas &
+de Leon, "G2P and ASR techniques for low-resource phonetic transcription of
+Tagalog, Cebuano, and Hiligaynon," ISMAC 2019,
+https://doi.org/10.1109/ISMAC.2019.8836168):
+
+  - utils/calculate_g2p_accuracy.py
+  - utils/preprocessing_tools.py
+  - utils/g2p_parsing.py
+  - utils/alignment.py
+
+The upstream project carries no license of its own, so these files are NOT
+covered by this repository's MIT license. They are included here for
+transparency and attribution only. If you want to reuse them beyond viewing
+this repository, contact the original authors.
+
+Third-party data: WikiPron
+--------------------------
+Pronunciation data is mined from Wiktionary by the WikiPron project (Lee et
+al., 2020), https://github.com/CUNY-CL/wikipron, licensed under Apache 2.0
+(the underlying Wiktionary data is CC BY-SA 3.0). See README.md for the full
+citation.
