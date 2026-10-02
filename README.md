@@ -1,118 +1,109 @@
-# Taglog-G2P: WFST Grapheme-to-Phoneme Conversion Project on Tagalog.
+# Taglog-G2P
 
-**Dataset**: Lee, J. L., Ashby, L. F.E., Garza, M. E., Lee-Sikka, Y., Miller, S., Wong, A., McCarthy, A. D., & Gorman, K. (2020). Massively multilingual pronunciation mining with WikiPron [Dataset]. https://github.com/CUNY-CL/wikipron
+Tagalog grapheme-to-phoneme (G2P) conversion with a WFST model trained with
+[Phonetisaurus](https://github.com/AdolfVonKleist/Phonetisaurus) on
+[WikiPron](https://github.com/CUNY-CL/wikipron) pronunciation data.
 
-**Motivation**: Grapheme-to-phoneme (G2P) conversion is a core component of speech technologies such as text-to-speech and automatic speech recognition, yet low-resource languages like Tagalog have little pronunciation data to train on.
+```console
+$ python tagalog_g2p.py araw kamusta
+ʔ a ɾ a w
+k a m u s t a
+```
 
-**Goal**: Train and evaluate WFST-based (Phonetisaurus) G2P models for Tagalog on Wiktionary pronunciation data, analyze their errors, and package the best model as a standalone command-line tool.
+## Results
 
-## Set Up
+Phone error rate (PER) and word error rate (WER) on the held-out Wiktionary
+test split (2,171 words):
 
-> This project runs inside a [Docker](https://www.docker.com/) container, which provides [Phonetisaurus](https://github.com/AdolfVonKleist/Phonetisaurus) and all other dependencies (see the [`Dockerfile`](Dockerfile)).
+| Model | PER | WER |
+| --- | --- | --- |
+| WFST (Phonetisaurus, this repo) | **0.88%** | **6.08%** |
+| ByT5 ([filipino-byt5-g2p](https://huggingface.co/lowestofthelow/filipino-byt5-g2p)) | 1.64% | 9.07% |
 
-1. Simply clone the repository.
-2. Run `docker build -t phonetisaurus .` to build the container image.
-3. Run `docker run --rm -it -v "${PWD}:/work" phonetisaurus bash` to enter the container.
+10-fold cross-validation PER of the WFST model: 1.03% ± 0.12%.
 
-On Windows PowerShell, steps 2–3 are wrapped in a script:
+## Installation
+
+Everything runs in a Docker container that builds Phonetisaurus and its
+dependencies (see the [`Dockerfile`](Dockerfile)). From the repository root:
+
+```bash
+docker build -t phonetisaurus .
+docker run --rm -it -v "${PWD}:/work" phonetisaurus bash
+```
+
+On Windows PowerShell, [`run_phonetisaurus.ps1`](run_phonetisaurus.ps1) runs
+both commands:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ./run_phonetisaurus.ps1
 ```
 
-## Model
+## Usage
 
-We use a **WFST joint-sequence model** trained with Phonetisaurus. The final
-model (`notebook/train/cwik_model.fst`) is trained in
-[`notebook/Wik_eval.ipynb`](notebook/Wik_eval.ipynb) on cleaned WikiPron
-Tagalog data, and every model is scored by phone error rate (PER) on a
-held-out Tagalog test set.
+### Command line
 
-## CLI: words → IPA phones
-
-`tagalog_g2p.py` transcribes Tagalog words to IPA using the final model.
-No install step — run it inside the container:
+Inside the container:
 
 ```bash
-python tagalog_g2p.py araw               # ʔ a ɾ a w
-python tagalog_g2p.py kamusta po         # two lines, one per word
-python tagalog_g2p.py "kamusta po"       # same as above
+python tagalog_g2p.py araw            # ʔ a ɾ a w
+python tagalog_g2p.py "kamusta po"    # one line per word
 ```
 
-Output is always the single best pronunciation as space-separated phones,
-one line per input word. Input is NFC-normalized and lowercased (the
-model's alphabet is lowercase); characters unseen in training are an
-error. The model emits no stress marks (the training dict has none), so
-output is unstressed broad IPA.
-
-To retrain the model, run [`notebook/Wik_eval.ipynb`](notebook/Wik_eval.ipynb):
-it rebuilds the train/val/test splits and overwrites
-`notebook/train/cwik_model.fst`.
+Each word gets its best pronunciation as space-separated broad IPA phones,
+without stress marks. Input is lowercased and NFC-normalized; characters the
+model never saw in training are an error.
 
 ### Standalone executable
 
-The CLI can be packaged as a single self-contained executable — model,
-Phonetisaurus binding, and OpenFst libraries all bundled — so it runs
-without Docker, Python, or a Phonetisaurus install. Build it inside the
-container, then copy `dist/tagalog-g2p` anywhere and run it directly:
+Bundle the CLI, model and Phonetisaurus libraries into one file that runs
+without Docker or Python:
 
 ```bash
-./scripts/build-executable.sh        # → dist/tagalog-g2p (~13 MB)
-./dist/tagalog-g2p araw              # ʔ a ɾ a w
+./scripts/build-executable.sh    # builds dist/tagalog-g2p (~13 MB)
+./dist/tagalog-g2p araw
 ```
 
-The executable targets Linux x86_64 with glibc ≥ 2.31 (any mainstream
-distro from ~2020 on, including WSL2). It is not a native Windows or
-macOS binary — those platforms would need Phonetisaurus rebuilt natively
-first.
+The executable runs on Linux x86_64 with glibc 2.31 or newer, including WSL2.
 
 ## Notebooks
 
-View the notebooks enumerated below, also view the notebooks in the order
-indicated. Each one both trains models and analyzes their errors; run them
-inside the Docker container.
+Run them in this order inside the container:
 
-1. [`notebook/Aquino_eval.ipynb`](notebook/Aquino_eval.ipynb): trains and
-   evaluates models on the Aquino & Tsang Tagalog speech-corpus
-   transcriptions — a baseline model, a model on cleaned data, and a
-   hyperparameter-optimized model — with error analysis and conclusions.
-1. [`notebook/Pron_eval.ipynb`](notebook/Pron_eval.ipynb): trains and
-   evaluates baseline and tuned models from the `train.tsv`/`test.tsv`
-   pronunciation splits, reporting PER and WER, with error analysis
-   including vowel-height confusions (o↔u, e↔i).
-1. [`notebook/Wik_eval.ipynb`](notebook/Wik_eval.ipynb): the final phonemic
-   evaluation on cleaned WikiPron data — coverage-safe 80/10/10 split,
-   10-fold cross-validation, held-out test PER — with error analysis of
-   glottal-stop position and vowel-height confusions. Trains the model
-   shipped with the CLI.
+| Notebook | Description |
+| --- | --- |
+| [`Aquino_eval`](notebook/Aquino_eval.ipynb) | Baseline, cleaned-data and tuned models on the Aquino & Tsang speech-corpus transcriptions |
+| [`Pron_eval`](notebook/Pron_eval.ipynb) | Baseline and tuned models on the `train.tsv`/`test.tsv` pronunciation splits |
+| [`Wik_eval`](notebook/Wik_eval.ipynb) | The final model: 80/10/10 split, 10-fold cross-validation, test PER and error analysis. Writes `notebook/train/cwik_model.fst`, the model the CLI uses |
+| [`ByT5_eval`](notebook/ByT5_eval.ipynb) | A neural ByT5 model on the same test split, compared with the WFST model. Run `Wik_eval` first; needs `torch` and `transformers` (`pip install -r requirements.txt`) |
 
-## Data
+Raw data goes in `data/`, which isn't tracked in git. The notebooks write
+their splits, models, predictions and error reports under `notebook/`.
 
-The pronunciation data used in the project is mined from Wiktionary by the
-WikiPron project (Lee et al., 2020), available at
-[github.com/CUNY-CL/wikipron](https://github.com/CUNY-CL/wikipron) under the
-Apache 2.0 license (the underlying Wiktionary data is CC BY-SA 3.0). The
-speech-corpus transcriptions come from Aquino, Tsang, Lucas & de Leon's
-University of the Philippines Diliman project (*DSP01: A hybrid
-grapheme-to-phoneme and speech recognition system for automated phonetic
-transcription of speech data in Tagalog, Cebuano, and Hiligaynon*;
-published as "G2P and ASR techniques for low-resource phonetic
-transcription of Tagalog, Cebuano, and Hiligaynon," ISMAC 2019,
-https://doi.org/10.1109/ISMAC.2019.8836168), which the helper code in
-[`utils/`](utils/) is also adapted from — see [NOTICE](NOTICE).
+## Project structure
 
-Raw data is expected in the `data/` directory (not tracked in git). Running
-the notebooks writes their dictionaries and train/test splits to
-`notebook/dicts/`, trained models to `notebook/train/`, predictions to
-`notebook/output/`, and error reports to `notebook/errors/`; these are
-created when needed and not tracked in git. Scratch files (file and word
-lists, training by-products) go to a temp directory that is deleted when
-the notebook finishes.
+```
+├── tagalog_g2p.py   # command-line tool
+├── notebook/        # evaluation notebooks and the trained model
+├── utils/           # alignment and scoring helpers (third-party, see NOTICE)
+├── scripts/         # data preparation and executable build scripts
+└── Dockerfile       # Phonetisaurus, OpenFst and MITLM build
+```
+
+## Data and citations
+
+- **WikiPron** (Apache 2.0; the Wiktionary data is CC BY-SA 3.0):
+  Lee, J. L., Ashby, L. F. E., Garza, M. E., Lee-Sikka, Y., Miller, S.,
+  Wong, A., McCarthy, A. D., & Gorman, K. (2020). Massively multilingual
+  pronunciation mining with WikiPron [Dataset].
+  https://github.com/CUNY-CL/wikipron
+- **Speech-corpus transcriptions and `utils/` code**: Aquino, Tsang, Lucas &
+  de Leon (2019). G2P and ASR techniques for low-resource phonetic
+  transcription of Tagalog, Cebuano, and Hiligaynon. *ISMAC 2019*.
+  https://doi.org/10.1109/ISMAC.2019.8836168
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE), with one
-exception: the helper code in [`utils/`](utils/) is adapted from Aquino &
-Tsang's project (see [Data](#data) above) and is not covered by that
-license. See [NOTICE](NOTICE) for details.
+[MIT](LICENSE), except the code in [`utils/`](utils/), which is adapted from
+Aquino & Tsang's project and isn't covered by it. See [NOTICE](NOTICE).
