@@ -17,4 +17,4 @@ counter(){
     done
 }
 
-counter "$SEARCH_PATH" > ../notebook/paths/csv-clean-train-files.txt
+counter "$SEARCH_PATH"

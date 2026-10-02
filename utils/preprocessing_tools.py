@@ -7,6 +7,8 @@ DSP01 - A hybrid grapheme-to-phoneme and speech recognition system for automated
 2014-06489 Tsang, Joshua Lijandro L.
 """
 
+import os
+
 from g2p_parsing import *
 
 def create_dict(log_list, csv_list, dict_name):
@@ -53,16 +55,20 @@ def create_dict(log_list, csv_list, dict_name):
             dict_file.write(utt + "\t" + trxn + "\n")
 
 
-def create_trxn(log_test, wlist_g2p_name):
+def create_trxn(log_test, wlist_g2p_name, out_dir):
     '''
     create_trxn
     encodes CSV file transcriptions of utterances in LOG files using a dictionary containing words and G2P-generated pronunciations
+    the CSV files are written to out_dir; returns the path of a file listing them
     '''
     utt_lookup = dict()
     trxn_lookup = dict()
     wlist_g2p = dict()
 
     csv_files = list()
+
+    out_dir = str(out_dir).replace(os.sep, "/")
+    os.makedirs(out_dir, exist_ok=True)
 
     with open(log_test, "r") as log_test_file, open(
         wlist_g2p_name, "r"
@@ -71,7 +77,8 @@ def create_trxn(log_test, wlist_g2p_name):
         for line in log_test_file:
             utt_lookup.update(clean_utt(log2utt(line.strip())))
 
-            csv_files.append(".".join(line.split(".")[:-1]) + ".csv")
+            csv_name = ".".join(line.strip().split("/")[-1].split(".")[:-1]) + ".csv"
+            csv_files.append(out_dir + "/" + csv_name)
 
         for line in wlist_g2p_file:
             pair = line.strip().split("\t")
@@ -81,6 +88,13 @@ def create_trxn(log_test, wlist_g2p_name):
 
         for csv_address in csv_files:
             trxn2csv(trxn_lookup, csv_address)
+
+    csv_list_name = out_dir + "/csv-list.txt"
+    with open(csv_list_name, "w") as csv_list_file:
+        for csv_address in csv_files:
+            csv_list_file.write(csv_address + "\n")
+
+    return csv_list_name
 
 
 def create_wlist(log_test, wlist_name):

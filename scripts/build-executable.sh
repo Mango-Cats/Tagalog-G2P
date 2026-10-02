@@ -14,4 +14,11 @@ if ! "$PYTHON" -c 'import Phonetisaurus' 2>/dev/null; then
 fi
 
 "$PYTHON" -m PyInstaller --version >/dev/null 2>&1 || "$PYTHON" -m pip install pyinstaller
-exec "$PYTHON" -m PyInstaller --clean --noconfirm tagalog-g2p.spec
+
+# PyInstaller's work files and bytecode caches are scratch: keep them in a temp
+# dir that is removed on exit, so only dist/tagalog-g2p is left behind.
+WORK="$(mktemp -d)"
+trap 'rm -rf "$WORK"' EXIT
+export PYTHONDONTWRITEBYTECODE=1
+
+"$PYTHON" -m PyInstaller --clean --noconfirm --workpath "$WORK" tagalog-g2p.spec

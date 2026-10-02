@@ -12,6 +12,8 @@ DSP01 - A hybrid grapheme-to-phoneme and speech recognition system for automated
 compares the edit distance of G2P-generated CSV files against manually-verified transcriptions
 """
 
+import os
+
 from g2p_parsing import *
 from alignment import *
 
@@ -29,6 +31,7 @@ def calculate_accuracy(csv_test_list, csv_ref_list, file_name):
 
     with open(csv_test_list, "r") as test_list_file, open(csv_ref_list, "r") as ref_list_file:
 
+        os.makedirs("./errors", exist_ok=True)
         with open("./errors/" + file_name + "_errors.txt", "w") as f:
             pass
 
