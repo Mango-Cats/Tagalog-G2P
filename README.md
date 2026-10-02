@@ -46,11 +46,9 @@ model's alphabet is lowercase); characters unseen in training are an
 error. The model emits no stress marks (the training dict has none), so
 output is unstressed broad IPA.
 
-To retrain the model, see [`notebook/Wik_eval.ipynb`](notebook/Wik_eval.ipynb), or run:
-
-```bash
-phonetisaurus-train --lexicon notebook/dicts/cwik_trainval.dict --seq2_del --model notebook/train/cwik_model
-```
+To retrain the model, run [`notebook/Wik_eval.ipynb`](notebook/Wik_eval.ipynb):
+it rebuilds the train/val/test splits and overwrites
+`notebook/train/cwik_model.fst`.
 
 ### Standalone executable
 
@@ -104,9 +102,13 @@ transcription of Tagalog, Cebuano, and Hiligaynon," ISMAC 2019,
 https://doi.org/10.1109/ISMAC.2019.8836168), which the helper code in
 [`utils/`](utils/) is also adapted from — see [NOTICE](NOTICE).
 
-Raw data is expected in the `data/` directory (not tracked in git); the
-processed dictionaries and train/test splits the notebooks produce live in
-[`notebook/dicts/`](notebook/dicts/).
+Raw data is expected in the `data/` directory (not tracked in git). Running
+the notebooks writes their dictionaries and train/test splits to
+`notebook/dicts/`, trained models to `notebook/train/`, predictions to
+`notebook/output/`, and error reports to `notebook/errors/`; these are
+created when needed and not tracked in git. Scratch files (file and word
+lists, training by-products) go to a temp directory that is deleted when
+the notebook finishes.
 
 ## License
 
