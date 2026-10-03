@@ -1,4 +1,4 @@
-# Python deps for the project venv (inside the container; see README "Set Up").
+# Python deps for the project venv (inside the container; see README "Installation").
 # The Phonetisaurus binding is not on PyPI: it is built by the Dockerfile and
 # linked into the venv with a .pth file.
 
@@ -11,9 +11,15 @@ unidecode
 notebook
 ipykernel
 
-# notebook/ByT5_eval.ipynb (CPU wheels: --extra-index-url https://download.pytorch.org/whl/cpu)
+# notebook/ByT5_eval.ipynb and ByT5_finetune.ipynb (CPU wheels: --extra-index-url https://download.pytorch.org/whl/cpu)
 torch
 transformers
+
+# notebook/Epitran_eval.ipynb
+epitran
+
+# notebook/G2P_compare.ipynb
+scipy
 
 # scripts/build-executable.sh
 pyinstaller
