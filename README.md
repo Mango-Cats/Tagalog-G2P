@@ -16,28 +16,47 @@ The G2P wasn't picked just for having the lowest score. One candidate from each 
 rule-based, statistical and neural, each built for Filipino or covering it, was scored by phone
 error rate (PER) on the same held-out Wiktionary test split (2,171 words) and the same 10
 cross-validation folds, and the differences were tested for significance
-([`G2P_compare`](notebook/G2P_compare.ipynb)). The decision rule was fixed before the results:
-the lowest test PER, a significant lead over every other candidate, and the lowest mean fold PER.
+([`G2P_compare`](notebook/G2P_compare.ipynb)). The decision rule: the candidate with the lowest
+test PER is chosen if its lead over every other candidate is significant. The fold PERs are a
+check of stability, not part of the rule.
 
-| Candidate | Family | Test PER | Test WER | Fold PER (10 folds) |
+| Candidate | Family | Test PER | Test WER | Fold PER |
 | --- | --- | --- | --- | --- |
 | Epitran `tgl-Latn` (Mortensen et al., 2018) | rule-based | 4.80% | 28.79% | 5.23% ± 0.25%\* |
-| **WFST** (Phonetisaurus, this repo) | statistical | **0.81%** | **5.85%** | **0.99% ± 0.06%** |
+| WFST (Phonetisaurus, this repo) | statistical | 0.81% | 5.85% | 0.99% ± 0.06% |
 | [filipino-byt5-g2p](https://huggingface.co/lowestofthelow/filipino-byt5-g2p) (Marqueses et al., 2026) | neural, existing model | 1.07% | 6.77% | 1.21% ± 0.13%\* |
-| CharsiuG2P fine-tuned on this data (Zhu et al., 2022) | neural, same data as the WFST | not run yet (needs a GPU) | | |
+| CharsiuG2P fine-tuned on this data (Zhu et al., 2022) | neural, same data as the WFST | **0.69%** | **4.97%** | 0.89% (1 of 10 folds so far) |
 
-\* Scored on each fold without retraining; the WFST model is retrained on each fold.
+\* Scored on each fold without retraining; the WFST and CharsiuG2P are retrained on each fold.
 
-The WFST model meets the rule. Its lead is significant over both other candidates (paired
-bootstrap 95% CI and Wilcoxon signed-rank test with Holm correction): +0.26 PER points over
-filipino-byt5-g2p (95% CI 0.04 to 0.50) and +3.99 over Epitran (95% CI 3.63 to 4.35).
+No candidate meets the rule yet. The fine-tuned CharsiuG2P has the lowest test PER, but its lead
+over the WFST model, 0.13 PER points, isn't significant (paired bootstrap 95% CI −0.01 to 0.26;
+Wilcoxon p = 0.062). The two models disagree on only 112 test words (the WFST is worse on 65,
+CharsiuG2P on 47). CharsiuG2P is significantly better than filipino-byt5-g2p (+0.39 points, 95%
+CI 0.19 to 0.61) and Epitran (+4.11 points). How to break the tie between CharsiuG2P and the WFST
+is still to be decided.
+
+**The fine-tuned CharsiuG2P.** The base model, `charsiu/g2p_multilingual_byT5_small_100`, writes
+Tagalog phonetically (`ʔɐbo`) rather than in this dictionary's phonemic notation, so before
+fine-tuning its PER is 35.27% (on 300 validation words). It is fine-tuned with the settings of
+Marqueses et al. (2026), Adafactor at a constant learning rate of 3 × 10⁻⁴. The number of epochs,
+6, is chosen on the validation split. The final model is trained on the same 90% pool as the final
+WFST and tested once.
+
+**Two follow-up checks on the tie.** Both were run after the main result, so they explain it but
+don't change the decision:
+
+- **Test words seen in pretraining.** CharsiuG2P was pretrained on WikiPron data that includes
+  Tagalog, and 558 test words (25.7%) appear in its published Tagalog files. Its lead doesn't come
+  from them: on the 1,613 words it never saw, its PER is 0.64% against the WFST's 0.79%, the same
+  0.14-point gap, and still not significant (95% CI 0.00 to 0.29, p = 0.063).
+- **Word length.** CharsiuG2P's lead is largest on words of 6–8 letters (0.77% against 1.01%), but
+  after the Holm–Bonferroni correction no length group shows a significant difference. For both
+  models, 71–91% of the errors in every length group involve the glottal stop `ʔ`.
+
 filipino-byt5-g2p was trained on labels from the same Wiktionary source, and 38.5% of the test
 words appear in its training sentences. On the test words it hasn't seen, its PER is 1.17%,
 against 0.71% for the WFST model.
-
-The fine-tuned CharsiuG2P is the controlled neural comparison: it learns from exactly the same data
-as the WFST model. It joins the table once [`ByT5_finetune`](notebook/ByT5_finetune.ipynb) has run
-on a GPU.
 
 Before splitting, 11 broken source entries are dropped: 4 with symbols outside the Filipino phoneme
 inventory (e.g. tone numbers) and 7 truncated transcriptions (`insenso` as /sj/).
@@ -105,8 +124,8 @@ The notebooks come in two stages. Run each stage in the order listed.
 | [`Wik_eval`](notebook/Wik_eval.ipynb) | WFST (statistical). Writes the test split, validation split and folds every candidate shares, and `notebook/train/cwik_model.fst`, the model the CLI uses | container |
 | [`Epitran_eval`](notebook/Epitran_eval.ipynb) | Epitran `tgl-Latn` (rule-based) | container |
 | [`ByT5_eval`](notebook/ByT5_eval.ipynb) | filipino-byt5-g2p (neural, existing model), including the test words it saw in training | container (a CPU is enough) |
-| [`ByT5_finetune`](notebook/ByT5_finetune.ipynb) | CharsiuG2P fine-tuned and cross-validated on the WFST's data (neural, controlled) | Windows with an NVIDIA GPU, in `.venv-windows` (setup at the top of the notebook) |
-| [`G2P_compare`](notebook/G2P_compare.ipynb) | All candidates side by side, significance tests, the choice of G2P and the limits of the comparison. Rerun it after `ByT5_finetune` to add the fine-tuned model | container |
+| [`ByT5_finetune`](notebook/ByT5_finetune.ipynb) | CharsiuG2P fine-tuned and cross-validated on the WFST's data (neural, controlled). An epoch takes about 4 minutes on an RTX 3060, and the cross-validation trains ten more models; it saves each fold as it finishes, so a stopped run resumes. The model is saved to `notebook/train/byt5ft_model/` (1.2 GB, not tracked in git) | Windows with an NVIDIA GPU, in `.venv-windows` (setup at the top of the notebook) |
+| [`G2P_compare`](notebook/G2P_compare.ipynb) | All candidates side by side, significance tests, the choice of G2P, follow-up checks on the two best candidates (pretraining overlap, word length) and the limits of the comparison. Rerun it after `ByT5_finetune` to update the fine-tuned model's scores | container |
 
 The candidate notebooks need `torch`, `transformers`, `epitran` and `scipy` on top of the
 container's packages: `pip install -r requirements.txt`.
